@@ -1,0 +1,4210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_blank">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>楚天关注315</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "SimSun";
+            font-size: 12px;
+            background: #f6f6f6 !important;
+        }
+
+        .clearfix:before, .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+            overflow: hidden;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        a:hover {
+            color: #6daaea !important;
+        }
+
+        a:hover:after {
+            /*content: "";*/
+            /*border-bottom: 1px solid #6daaea;*/
+            /*position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -6px;*/
+        }
+
+        .w1200 {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page1 {
+            max-width: 1920px;
+            width: 100%;
+            margin: 0 auto;
+            background: url("https://mat1.gtimg.com/hb/chenz/y315/images/2.jpg") no-repeat center top;
+            height: 595px;
+        }
+
+        .page_content {
+            margin-top: 56px;
+        }
+
+        .page_content .left_part {
+            width: 920px;
+            float: left;
+        }
+
+        .page_content .right_part {
+            width: 260px;
+            float: right;
+            border-top: 3px solid #539be5;
+            background: #fff;
+            padding-bottom: 30px;
+        }
+
+        .page2 .my_form {
+            width: 850px;
+            padding: 60px 16px 24px 16px;
+            border: 3px solid #b7dfff;
+            margin: 0 auto;
+            background: #fff;
+            position: relative;
+        }
+
+        .page22 .logo,
+        .page2 .my_form .logo {
+            width: 382px;
+            height: 52px;
+            background: url("//mat1.gtimg.com/hb/chenz/y315/images/10.png") no-repeat center center;
+            position: absolute;
+            left: 50%;
+            margin-left: -191px;
+            top: -20px;
+            text-align: center;
+            line-height: 52px;
+            font-family: "Microsoft YaHei";
+            font-size: 26px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .page2 .my_form .input {
+            width: 848px;
+            height: 36px;
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+
+        .page2 .my_form .my_input {
+            width: 838px;
+            margin-left: 10px;
+            height: 36px;
+            line-height: 36px;
+            border: none;
+            outline: none;
+        }
+
+        .page2 .my_form .textarea {
+            height: 112px;
+            margin-bottom: 16px;
+        }
+
+        .page2 .my_form .my_textarea {
+            width: 822px;
+            height: 92px;
+            padding: 10px;
+            outline: none;
+            border: none;
+        }
+
+        .page2 .my_form .pp {
+            width: 850px;
+            margin: 0 auto;
+        }
+
+        .page2 .my_form .pp .up_pics {
+            width: 300px;
+            float: left;
+        }
+
+        .page2 .my_form .pp .up_pics .up_btn {
+            width: 86px;
+            height: 15px;
+            background: url("//mat1.gtimg.com/hb/chenz/y315/images/11.png") no-repeat center left;
+            text-indent: 24px;
+            font-family: "Microsoft YaHei";
+            font-size: 12px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .page2 .my_form .pp .join_btn {
+            width: 132px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #fff;
+            background: #ff6600;
+            cursor: pointer;
+            float: right;
+        }
+
+        .page2 .my_form .uppic_wrap_shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("https://mat1.gtimg.com/hb/chenz/home2017/images/5.png") repeat left top;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            display: none;
+        }
+
+        .page2 .my_form .uppic_wrap {
+            width: 486px;
+            height: 203px;
+            position: absolute;
+            top: 44px;
+            left: 240px;
+            z-index: 100;
+            /**/
+        }
+
+        .input_wrap .input1 {
+            width: 516px !important;
+            float: left;
+        }
+
+        .input_wrap .input1 .my_input {
+            width: 500px;
+        }
+
+        .input_wrap .input2 {
+            width: 145px !important;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .input_wrap .input2 .my_input {
+            width: 132px;
+        }
+
+        .input_wrap .code_btn {
+            width: 144px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #fff;
+            float: left;
+            margin-left: 20px;
+            background: #0075b7;
+            cursor: pointer;
+        }
+
+        .page22 {
+            width: 810px;
+            padding: 58px 36px 0 36px;
+            border: 3px solid #b7dfff;
+            background: #fff;
+            margin: 0 auto;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .slideBox {
+            width: 808px;
+            height: 466px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slideBox .hd {
+            height: 20px;
+            overflow: hidden;
+            position: absolute;
+            right: 34px;
+            bottom: 18px;
+            z-index: 1;
+        }
+
+        .slideBox .hd ul {
+            overflow: hidden;
+            zoom: 1;
+            float: left;
+        }
+
+        .slideBox .hd ul li {
+            float: left;
+            margin-right: 7px;
+            width: 20px;
+            height: 20px;
+            background: url("//mat1.gtimg.com/hb/chenz/y315001/images//13.png") no-repeat center center;
+            cursor: pointer;
+        }
+
+        .slideBox .hd ul li.on {
+            background: url("//mat1.gtimg.com/hb/chenz/y315001/images//14.png") no-repeat center center;
+        }
+
+        .slideBox .bd {
+            position: relative;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .slideBox .bd li {
+            zoom: 1;
+            vertical-align: middle;
+            position: relative;
+        }
+
+        .slideBox .bd li a {
+            display: block;
+        }
+
+        .slideBox .bd li .shadow_bg {
+            width: 100%;
+            height: 58px;
+            line-height: 58px;
+        }
+
+        .slideBox .bd li .shadow_bg a {
+            font-family: "Microsoft YaHei";
+            font-size: 18px;
+            color: #000;
+        }
+
+        .slideBox .bd li .shadow_text {
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            z-index: 2;
+            text-indent: 24px;
+            margin-top: 80px;
+        }
+
+        .slideBox .bd li .shadow_text a {
+            font-family: "微软雅黑";
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .slideBox .bd img {
+            width: 808px;
+            height: 410px;
+            display: block;
+        }
+
+        /* 下面是前/后按钮代码，如果不需要删除即可 */
+        .slideBox .prev,
+        .slideBox .next {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            top: 50%;
+            margin-top: -25px;
+        }
+
+        .slideBox .prev {
+            left: -2px;
+            background: url("//mat1.gtimg.com/hb/chenz/dwj0527/images/18.png") no-repeat center center;
+        }
+
+        .slideBox .next {
+            right: 0;
+            background: url("//mat1.gtimg.com/hb/chenz/dwj0527/images/19.png") no-repeat center center;
+        }
+
+        .page33 {
+            width: 920px;
+            height: 62px;
+            background: url("//mat1.gtimg.com/hb/chenz/y315001/images//15.png") no-repeat center center;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+
+        .common .item_wrap {
+            width: 920px;
+            height: 289px;
+            margin-bottom: 28px;
+            background: url("//mat1.gtimg.com/hb/chenz/y315001/images//16.png") no-repeat center center;
+        }
+
+        .common .head_image {
+            width: 920px;
+            overflow-x: hidden;
+        }
+
+        .common .item_wrap .left {
+            width: 380px;
+            height: 289px;
+            padding-left: 20px;
+            float: left;
+        }
+
+        .common .item_wrap .right {
+            width: 380px;
+            height: 289px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        .common .item_wrap .left .p1 {
+            padding-top: 32px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .common .item_wrap .left .p1,
+        .common .item_wrap .left .p1 a {
+            font-family: "Microsoft YaHei";
+            font-size: 20px;
+            font-weight: bold;
+            color: #0faae9;
+        }
+
+        .common .item_wrap .left .p2 {
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .common .item_wrap .left .p2,
+        .common .item_wrap .left .p2 a {
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        .common .item_wrap .left .p3 {
+
+        }
+
+        .common .item_wrap .left .p3,
+        .common .item_wrap .left .p3 a {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .common .item_wrap .right .p1 {
+            padding-top: 32px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .common .item_wrap .right .p1,
+        .common .item_wrap .right .p1 a {
+            font-family: "Microsoft YaHei";
+            font-size: 20px;
+            font-weight: bold;
+            color: #0faae9;
+        }
+
+        .common .item_wrap .right .detail_wrap .img {
+            width: 160px;
+            height: 178px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .common .item_wrap .right .detail_wrap .desc {
+            width: 200px;
+            height: 178px;
+            overflow: hidden;
+            float: right;
+        }
+
+        .common .item_wrap .right .detail_wrap .desc .pp1,
+        .common .item_wrap .right .detail_wrap .desc .pp1 a {
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #666666;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        .common .item_wrap .right .detail_wrap .desc .pp2,
+        .common .item_wrap .right .detail_wrap .desc .pp2 a {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .common .head_image {
+            position: relative;
+        }
+
+        .common .head_image .text {
+            width: 200px;
+            height: 42px;
+            line-height: 42px;
+            position: absolute;
+            left: 160px;
+        }
+
+        .common .head_image .text,
+        .common .head_image .text a {
+            font-family: "Microsoft YaHei";
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .page4 .head_image .text {
+            top: 48px;
+        }
+
+        .page5 .head_image .text {
+            top: 46px;
+        }
+
+        .page6 .head_image .text {
+            top: 30px;
+        }
+
+        .page7 .head_image .text {
+            top: 47px;
+        }
+
+        .page8 .head_image .text {
+            top: 33px;
+        }
+
+        .page_content .right_part .activist_wrap {
+            width: 242px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .page_content .right_part .paginator_wrap .item {
+            border-top: 1px solid #ebebeb;
+            margin-top: 5px;
+            height: 76px;
+            overflow: hidden;
+        }
+
+        .page_content .right_part .activist_wrap .title {
+            height: 54px;
+            line-height: 54px;
+            font-family: "Microsoft YaHei";
+            font-size: 26px;
+            color: #539be5;
+            margin-bottom: 5px;
+        }
+
+        .page_content .right_part .paginator_wrap .item .i_title {
+            height: 36px;
+            line-height: 36px;
+            overflow: hidden;
+        }
+
+        .page_content .right_part .paginator_wrap .item .i_title a {
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .page_content .right_part .paginator_wrap .item .detail a {
+            font-family: "Microsoft YaHei";
+            font-size: 12px;
+            color: #666;
+            line-height: 20px;
+        }
+
+        /*分页样式*/
+
+        .paginator_style {
+            position: relative;
+            height: 24px;
+            margin: 0 auto;
+            margin-top: 30px;
+            display: table;
+        }
+
+        .pagination2 {
+            height: 24px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .pagination2 a {
+            text-decoration: none;
+            /*border: solid 1px #c0d3e6;*/
+            color: #333;
+            border-left-width: 0;
+            height: 24px !important
+        }
+
+        .pagination2 a {
+            height: 24px !important;
+            display: block;
+            float: left;
+            padding: 0 4px;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .pagination2 .active {
+            background-color: #6babdd;
+            color: #fff;
+            padding: 0 4px;
+            /*border: solid 1px #5c95c1*/
+        }
+
+        .pagination2 .prev {
+            /*border: solid 1px #c0d3e6*/
+        }
+
+        .pagination2 .next {
+            border-left-width: 0;
+            /*border-right-width: 1px*/
+        }
+
+        .pagination2 .active.prev, .pagination2 .active.next {
+            color: #dcdcdc;
+            border-color: #efefef;
+            background: #fff;
+        }
+
+        .pagination2 a:hover {
+            background-color: #cde4f8;
+        }
+
+        .pagination2 .active:hover {
+            background-color: #6babdd;
+        }
+
+        .pagination2 a.disabled {
+            display: none;
+        }
+
+        .page_content .right_part .pp {
+            width: 212px;
+            padding: 0 10px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            background: #f6f6f6;
+        }
+
+        .page_content .right_part .pp .p1 {
+            height: 38px;
+            line-height: 48px;
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            color: #383838;
+        }
+
+        .page_content .right_part .pp .p2 a {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            color: #666;
+            line-height: 30px;
+        }
+
+    </style>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "SimSun";
+    font-size: 12px;
+    background: #fff;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {
+    color: #6daaea !important;
+}
+
+a:hover:after {
+    /*content: "";*/
+    /*border-bottom: 1px solid #6daaea;*/
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;*/
+}
+
+.w1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.my_header {
+    background: #fafafa;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.my_header .w1000 {
+    /*overflow-x: hidden;*/
+}
+
+.my_header .w1000 .p1 {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    color: #666;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    float: left;
+}
+
+.my_header .w1000 .p2 {
+    width: 900px;
+    height: 16px;
+    float: right;
+    margin-top: 8px;
+    position: relative;
+    right: -20px;
+}
+
+.my_header .w1000 .p2_1 {
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    float: right;
+    padding-right: 18px;
+    margin-right: 18px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.my_header .w1000 .qq_login {
+    cursor: pointer;
+}
+
+.my_header .w1000 .qq_login_info {
+    display: none;
+}
+
+.my_header .w1000 .p2_1 .qq_icon {
+    margin-right: 10px;
+}
+
+.my_header .w1000 .p2_1 .qq_icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.my_header .w1000 .p2_1 .qq_icon {
+    position: relative;
+    /*top: -2px;*/
+}
+
+.my_header .w1000 .p2_1 .qq_logout {
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.my_header .w1000 .p2_1 .qq_logout,
+.my_header .w1000 .p2_1 .qq_name {
+    position: relative;
+    top: -5px;
+}
+
+.my_logo {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 212px;
+    background: url("//mat1.gtimg.com/hb/chenz/bl08/images/111.jpg") no-repeat center top;
+}
+
+.my_nav_wrap {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 48px;
+    background: #2f8cd7;
+    margin-bottom: 20px;
+}
+
+.my_nav_wrap .nav {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+}
+
+.my_nav_wrap .hover {
+    position: relative;
+}
+
+.my_nav_wrap .hover:before {
+    content: ' ';
+    width: 100%;
+    height: 4px;
+    background: #ff6600;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.my_nav_wrap .nav a {
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+
+.my_content .w1000 .left_content {
+    width: 672px;
+    float: left;
+}
+
+.my_content .w1000 .left_content .post_message {
+    width: 634px;
+    height: 192px;
+    border: 3px solid #b5e5ff;
+    margin-bottom: 21px;
+    padding: 16px;
+    position: relative;
+}
+
+.my_content .w1000 .left_content .post_message .input_title_wrap {
+    height: 30px;
+}
+
+.my_content .w1000 .left_content .post_message .input_title_wrap .input_title {
+    width: 357px;
+    height: 28px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.my_content .w1000 .left_content .post_message .input_title_wrap .input_title input[type="text"] {
+    width: 340px;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    border: none;
+    margin-left: 12px;
+font-size:14px;
+}
+
+.my_content .w1000 .left_content .post_message .input_title_wrap .input_title_news {
+    width: 264px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #ff6600;
+}
+
+.my_content .w1000 .left_content .post_message .input_title_wrap .input_title_news a {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #ff6600;
+}
+
+.my_content .w1000 .left_content .post_message .input_content_wrap {
+    width: 632px;
+    height: 112px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.my_content .w1000 .left_content .post_message .input_content {
+    padding: 10px;
+    width: 612px;
+    height: 90px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap {
+    height: 28px;
+    margin-top: 10px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .pic {
+    width: 52px;
+    height: 16px;
+    background: url("//mat1.gtimg.com/hb/chenz/baoliao2017/images/6.png") no-repeat center left;
+    text-indent: 22px;
+    line-height: 16px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: 6px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap {
+    width: 400px;
+    height: 24px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .text {
+    height: 24px;
+    line-height: 24px;
+    width: 62px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #666;
+    float: left;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .input {
+    height: 22px;
+    width: 104px;
+    padding-left: 4px;
+    border: 1px solid #c4c4c4;
+    float: left;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .input input[type="text"] {
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 3px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .tel {
+    float: left;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .tel_code {
+    margin-left: 6px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .tel_code .input {
+    width: 70px;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .tel_wrap .tel_code .text {
+    width: 70px;
+    background: #0075b7;
+    color: #fff;
+    text-align: center;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.my_content .w1000 .left_content .post_message .input_other_wrap .post_button {
+    width: 86px;
+    height: 28px;
+    background: #ff6600;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+
+.my_content .w1000 .left_content .post_message .picshow {
+    width: 453px;
+    position: absolute;
+    top: 221px;
+    left: 15px;
+    z-index: 1000;
+    background: #fff;
+    display: none;
+}
+
+.my_content .w1000 .left_content .news {
+    margin-bottom: 16px;
+}
+
+.my_content .w1000 .left_content .news .p1 {
+    height: 50px;
+    line-height: 50px;
+    font-family: "微软雅黑";
+    color: #000;
+    font-size: 28px;
+}
+
+.my_content .w1000 .left_content .news .p1 a {
+    font-family: "微软雅黑";
+    color: #000;
+    font-size: 28px;
+}
+
+.my_content .w1000 .left_content .news .p2 {
+    height: 26px;
+    line-height: 26px;
+    font-family: "微软雅黑";
+    color: #666;
+    font-size: 14px;
+}
+
+.my_content .w1000 .left_content .news .p2 a {
+    font-family: "微软雅黑";
+    color: #666;
+    font-size: 14px;
+}
+
+.my_content .w1000 .left_content .news_image {
+    width: 672px;
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.my_content .w1000 .left_content .tab_wrap {
+    height: 46px;
+    background: #fafafa;
+    border-bottom: 1px solid #ececec;
+}
+
+.my_content .w1000 .left_content .tab_wrap .tab_item {
+    width: 80px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    color: #333333;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    float: left;
+    cursor: pointer;
+}
+
+.my_content .w1000 .left_content .tab_wrap .active {
+    height: 41px;
+    line-height: 41px;
+    color: #0075b7;
+    background: #fff;
+    border-top: 4px solid #0075b7;
+    border-bottom: 1px solid #fafafa;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    position: relative;
+    top: 1px;
+}
+
+.my_content .w1000 .left_content .tab_contant {
+    padding: 26px 0;
+    display: none;
+}
+
+.my_content .w1000 .left_content .tab_contant1 {
+    display: block;
+}
+
+.my_content .w1000 .left_content .tab_contant .loading {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap {
+    /*height: 106px;*/
+    margin-bottom: 26px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #efefef;
+
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .icon_wrap {
+    width: 60px;
+    height: 106px;
+    overflow: hidden;
+    float: left;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .icon_wrap .icon,
+.my_content .w1000 .left_content .tab_contant .item_wrap .icon_wrap .icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .icon_wrap .icon_text {
+    color: #0075b7;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap {
+    width: 100%;
+    /*float: right;*/
+    /*height: 106px;*/
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .p1 {
+    height: 40px;
+    /*line-height: 40px;*/
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 20px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .p2 a,
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .p2 {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #666666;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .p2 {
+    line-height: 30px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .bzarea {
+    height: 28px;
+    padding-top: 16px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .bzarea .time {
+    width: 228px;
+    background: url(//mat1.gtimg.com/hb/0000huangshi/baolt_19.png) left center no-repeat;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    padding-left: 20px;
+    color: #999999;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .bzarea .linksz {
+    float: right;
+    width: 210px;
+    text-align: right;
+    line-height: 24px;
+    color: #999999;
+    color: #999999;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .p1 a {
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 20px;
+}
+
+.my_content .w1000 .right_content {
+    width: 298px;
+    float: right;
+}
+
+.my_content .w1000 .right_content .news {
+    background: #fafafa;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.my_content .w1000 .right_content .news .name {
+    height: 20px;
+    line-height: 20px;
+    border-left: 4px solid #2f8cd7;
+    text-indent: 10px;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #2f8cd7;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.my_content .w1000 .right_content .news .name .more {
+    width: 50px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #999;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.my_content .w1000 .right_content .news .p1 {
+    width: 266px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #404040;
+    line-height: 28px;
+}
+
+.my_content .w1000 .right_content .news .p2 {
+    width: 266px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.my_content .w1000 .right_content .news .p2 a {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #333;
+}
+
+.my_content .w1000 .right_content .news .p3 {
+    width: 266px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.my_content .w1000 .right_content .news .p3 .l {
+    width: 128px;
+    height: 106px;
+    float: left;
+    overflow: hidden;
+}
+
+.my_content .w1000 .right_content .news .p3 .r {
+    width: 130px;
+    float: right;
+}
+
+.my_content .w1000 .right_content .news .p3 .r a {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.my_content .w1000 .right_content .news .p4 {
+    width: 266px;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    text-indent: 14px;
+    margin-bottom: 14px;
+}
+
+.my_content .w1000 .right_content .news .p4 a {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333;
+}
+
+.my_content .w1000 .right_content .news .p4:before {
+    content: ' ';
+    width: 4px;
+    height: 4px;
+    background: #b7dfff;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    left: 0px;
+}
+
+.my_content .w1000 .right_content .news .p3 .r span {
+    color: #333;
+}
+
+.my_content .w1000 .right_content .news .p5 {
+    width: 266px;
+    margin: 0 auto;
+}
+
+.my_content .w1000 .right_content .news .p5 .pic {
+    height: 110px;
+    position: relative;
+}
+
+.my_content .w1000 .right_content .news .p5 .pic .desc {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.my_content .w1000 .right_content .news .p5 .pic .tag {
+    width: 34px;
+    height: 43px;
+    background: url(".//mat1.gtimg.com/hb/chenz/bl08/images/2.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.my_content .w1000 .right_content .news .p5 .pic .desc a {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #fff;
+}
+
+.my_content .w1000 .right_content .news .p5 .txt {
+    height: 40px;
+    line-height: 40px;
+}
+
+.my_content .w1000 .right_content .news .p5 .txt a {
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #333;
+}
+
+.my_content .w1000 .right_content .news .p6 {
+    width: 270px;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #2f8cd7;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.my_content .w1000 .right_content .news .p6:before {
+    width: 222px;
+    height: 1px;
+    background: #2f8cd7;
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    left: 48px;
+    margin-bottom: 10px;
+}
+
+.my_content .w1000 .right_content .news .p7 {
+    width: 270px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.my_content .w1000 .right_content .news .p7 .area_wrap {
+    width: 276px;
+}
+
+.my_content .w1000 .right_content .news .p7 .area {
+    width: 126px;
+    height: 78px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 10px;
+cursor: pointer;
+}
+
+.my_content .w1000 .right_content .news .p7 .area .a1 {
+    height: 26px;
+    line-height: 26px;
+    color: #333333;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.my_content .w1000 .right_content .news .p7 .area .a2 {
+    height: 18px;
+    line-height: 18px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    overflow: hidden;
+}
+
+.my_content .w1000 .right_content .news .p7 .area .a2 span {
+    color: #ff6600;
+}
+
+.my_content .w1000 .right_content .news .p8 {
+    margin: 16px auto;
+}
+
+.my_content .w1000 .right_content .news .p9 {
+    width: 266px;
+    height: 34px;
+    border: 1px solid #e4e4e4;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.my_content .w1000 .right_content .news .p9 .l,
+.my_content .w1000 .right_content .news .p9 .r {
+    width: 50%;
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    font-family: "Microsoft YaHei";
+    color: #333;
+}
+
+.my_content .w1000 .right_content .news .p9 .l {
+    text-indent: 20px;
+    font-size: 14px;
+}
+
+.my_content .w1000 .right_content .news .p9 .r {
+    text-indent: 28px;
+    font-size: 12px;
+    color: #999;
+}
+
+.my_content .w1000 .right_content .news .p9 .r span {
+    color: #ff6600;
+}
+
+/*分页样式 开始*/
+ul.pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul.pagination li {
+        display: inline;
+        cursor: pointer;
+    }
+
+    ul.pagination li,
+    ul.pagination li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        font-size: 12px;
+        color: #000;
+        font-family: "Microsoft YaHei";
+    }
+
+    ul.pagination .active {
+        background-color: #0084ce !important;
+        color: #fff !important;
+        border: 1px solid transparent;
+    }
+
+    ul.yiiPager li .selected a, ul.yiiPager li a.active, ul.pagination li a.active {
+        background-color: #0084ce !important;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+/*分页样式 结束*/
+
+.my_content .w1000 .detail_content {
+    width: 658px;
+    padding-right: 14px;
+}
+
+.my_content .w1000 .detail_content .detail_title {
+    font-family: "微软雅黑";
+    font-size: 26px;
+    color: #000;
+    line-height: 40px;
+}
+
+.my_content .w1000 .detail_content .detail_title a {
+    font-family: "微软雅黑";
+    font-size: 26px;
+    color: #000;
+}
+
+.my_content .w1000 .detail_content .detail_info {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 16px;
+}
+
+.my_content .w1000 .detail_content .detail_info span {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #999;
+    margin-right: 26px;
+}
+
+.my_content .w1000 .detail_content .detail_p p,
+.my_content .w1000 .detail_content .detail_p {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #666666;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.my_content .w1000 .detail_content .detail_p {
+    margin-bottom: 20px;
+}
+
+.my_content .w1000 .detail_content .detail_img {
+    margin-bottom: 20px;
+}
+
+.my_content .w1000 .detail_content .detail_img img,
+.my_content .w1000 .detail_content .detail_img {
+    width: 100%;
+}
+
+.my_content .w1000 .detail_content .detail_process {
+
+}
+
+.my_content .w1000 .detail_content .detail_process .detail_process_title {
+    height: 30px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 18px;
+}
+
+.my_content .w1000 .detail_content .detail_process .detail_process_title .text {
+    width: 72px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #56abee;
+    border-bottom: 1px solid #56abee;
+}
+
+.my_content .w1000 .detail_content .detail_process .detail_process_item_1 p,
+.my_content .w1000 .detail_content .detail_process .detail_process_item_1 {
+    height: 38px;
+    line-height: 38px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #999;
+}
+
+.my_content .w1000 .detail_content .detail_process .detail_process_item_2 p,
+.my_content .w1000 .detail_content .detail_process .detail_process_item_2 {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #666;
+    line-height: 30px;
+}
+
+.my_content .w1000 .detail_content .detail_process .detail_process_item_3 p,
+.my_content .w1000 .detail_content .detail_process .detail_process_item_3 {
+    height: 70px;
+    line-height: 70px;
+    text-align: right;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #666;
+}
+
+/*内网页面*/
+.contant101 {
+    padding-bottom: 100px;
+}
+
+.contant101 .w1000 .input_wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.contant101 .w1000 .input_wrap .left_wrap {
+    width: 110px;
+    height: 58px;
+    float: left;
+}
+
+.contant101 .w1000 .input_wrap .left {
+    margin-right: 16px;
+    height: 46px;
+    line-height: 46px;
+    text-align: right;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #666;
+}
+
+.contant101 .w1000 .input_wrap .left .start {
+    color: #f11b1b;
+    margin-right: 6px;;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap {
+    width: 678px;
+    float: right;
+}
+
+.contant101 .w1000 .input_wrap .right {
+    border: 1px solid #e0e0e0;
+    height: 44px;
+}
+
+.contant101 .w1000 .input_wrap .right .input {
+    width: 660px;
+    margin-left: 8px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    border: none;
+    outline: none;
+    position: relative;
+    top: 3px;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .tips {
+    height: 40px;
+    line-height: 40px;
+    color: #ff8533;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.contant101 .w1000 .input_wrap2 .left_wrap {
+    height: 242px;
+}
+
+.contant101 .w1000 .input_wrap2 .right_wrap .right {
+    height: 240px;
+}
+
+.contant101 .w1000 .input_wrap2 .right_wrap .right .input_textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 220px;
+    width: 650px;
+    color: #999;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 26px;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .button_wrap .button {
+    width: 134px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+    background: #ff5f00;
+    cursor: pointer;
+    float: left;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .button_wrap .button_tips {
+    width: 200px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    color: #b6b6b6;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    float: left;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .pic_wrap {
+    margin-top: 14px;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .image_wrap {
+    width: 78px;
+    height: 78px;
+    padding: 2px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .image_wrap .close {
+    width: 18px;
+    height: 18px;
+    /*background: url(".//mat1.gtimg.com/hb/chenz/bl08/images/8.png") no-repeat center center;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.contant101 .w1000 .input_wrap .right_wrap .hover {
+    border-color: #ff8533;
+}
+
+.contant101 .w1000 .input_wrap3 {
+    margin-top: 30px;
+}
+
+.contant101 .w1000 .input_wrap3 .right {
+    border: none;
+    height: 46px;
+}
+
+.contant101 .w1000 .input_wrap3 .right .tel {
+    width: 230px;
+    height: 44px;
+    border: 1px solid #e0e0e0;
+    margin-right: 16px;
+    float: left;
+    overflow: hidden;
+}
+
+.contant101 .w1000 .input_wrap3 .right .tel input[type="text"] {
+    width: 200px;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 7px;
+    color: #999;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.contant101 .w1000 .input_wrap3 .right .code {
+    width: 120px;
+}
+
+.contant101 .w1000 .input_wrap3 .right .tel input[type="text"] {
+    width: 210px;
+}
+
+.contant101 .w1000 .input_wrap3 .right .send_button {
+    width: 136px;
+    border: 1px solid #ff5f00;
+    background: #ff5f00;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+
+.contant101 .w1000 .input_wrap3 .check_wrap span {
+    color: #868686;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.contant101 .w1000 .input_wrap3 .check_wrap span a {
+    color: #0075b7;
+}
+
+.contant101 .w1000 .input_wrap4 {
+    margin-top: 40px;
+}
+
+.contant101 .w1000 .input_wrap4 .submit_button {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #0075b7;
+    font-size: 22px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+
+.my_detail {
+    margin-top: 30px;
+}
+
+.my_detail .item_wrap {
+    padding-bottom: 30px;
+    border-bottom:1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.my_detail .title {
+    padding: 8px 0;
+}
+
+.my_detail .title,
+.my_detail .title a {
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: #333;
+}
+
+.my_detail .desc {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+.my_detail .status {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+
+.my_detail .status span {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #999;
+}
+
+.my_detail .status .result {
+    margin: 0 6px;
+}
+
+.my_detail .status .plan i {
+    color: #666;
+    font-size: 14px;
+}
+
+.my_detail .tracking {
+    width: 960px;
+    padding: 10px 20px;
+    background: #f8f8f8;
+}
+
+.my_detail .tracking .name {
+    height: 20px;
+    line-height: 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #2f8cd7;
+    margin-bottom: 10px;
+}
+
+.my_detail .tracking .track_content {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+.my_detail .item_wrap_style_1 {
+    padding-bottom: 20px;
+}
+
+.my_detail .item_wrap_style_1 .desc a {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #2f8cd7;
+}
+
+.my_detail .nav_address {
+    height: 46px;
+    line-height: 46px;
+    font-family: "Microsoft YaHei";
+    font-size:14px;
+    color: #999;
+}
+
+.my_detail .load_more {
+    height: 96px;
+    position: relative;
+    display: none;
+}
+
+.my_detail .load_button {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left:-100px;
+    line-height: 50px;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    border:1px solid #eeeeee;
+}
+
+
+.my_content .w1000 .left_content .tab_contant .item_wrap .title_wrap .bzarea .time {
+display:none;
+}
+
+
+
+<!--[if !IE]>|xGv00|510af6ecf999548819a6298c262d1768<![endif]-->
+    </style>
+    <script src="//mat1.gtimg.com/hb/chenz/cj0808/js/jquery.min.js"></script>
+    <script src="//mat1.gtimg.com/hb/chenz/0718/messenger.js" type="text/javascript"></script>
+</head>
+<body>
+<style>
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .fl {
+        float: left;
+    }
+
+    .fr {
+        float: right;
+    }
+
+    .dis {
+        display: block;
+    }
+
+    .undis {
+        display: none;
+    }
+
+    .loginSmartTop,
+    .loginSmartBottom {
+        background-image: url(//mat1.gtimg.com/www/images/qq2012/qqbg_1.5.2.png);
+        background-repeat: no-repeat;
+    }
+
+    a.login,
+    a.login:hover,
+    a.weiboLogin,
+    a.weiboLogin:hover,
+    a.qzoneLogin,
+    a.qzoneLogin:hover,
+    a.mailLogin,
+    a.mailLogin:hover,
+    a.pengyouLogin,
+    a.pengyouLogin:hover,
+    .mininavRight .weibo,
+    .mininavRight .weibo:hover,
+    .mininavRight .qzone,
+    .mininavRight .qzone:hover,
+    .mininavRight .mail,
+    .mininavRight .mail:hover,
+    .mininavRight .pengyou,
+    .mininavRight .pengyou:hover {
+        background-image: url(//mat1.gtimg.com/www/images/qq2012/loginall_1.2.png);
+        background-repeat: no-repeat;
+    }
+
+    a.login {
+        width: 70px;
+        height: 28px;
+        display: block;
+        float: right;
+        background-position: left -450px;
+    }
+
+    a.login:hover {
+        background-position: left -500px;
+    }
+
+    a.weiboLogin {
+        width: 30px;
+        height: 28px;
+        display: block;
+        float: right;
+        background-position: left -50px;
+    }
+
+    a.weiboLogin:hover {
+        background-position: right -50px;
+    }
+
+    a.qzoneLogin {
+        width: 30px;
+        height: 28px;
+        display: block;
+        float: right;
+        background-position: left -100px;
+    }
+
+    a.qzoneLogin:hover {
+        background-position: right -100px;
+    }
+
+    a.mailLogin {
+        width: 30px;
+        height: 28px;
+        display: block;
+        float: right;
+        background-position: left -150px;
+    }
+
+    a.mailLogin:hover {
+        background-position: right -150px;
+    }
+
+    a.pengyouLogin {
+        width: 28px;
+        height: 28px;
+        display: block;
+        float: right;
+        background-position: left -200px;
+    }
+
+    a.pengyouLogin:hover {
+        background-position: right -200px;
+    }
+
+    .mininavRight {
+        font-size: 12px;
+    }
+
+    .mininavRight .weibo {
+        background-position: 7px -244px;
+    }
+
+    .mininavRight .weibo:hover {
+        background-position: -79px -244px;
+    }
+
+    .mininavRight .qzone {
+        background-position: 7px -294px;
+    }
+
+    .mininavRight .qzone:hover {
+        background-position: -74px -294px;
+    }
+
+    .mininavRight .mail {
+        background-position: 7px -342px;
+    }
+
+    .mininavRight .mail:hover {
+        background-position: -77px -342px;
+    }
+
+    .mininavRight .pengyou {
+        background-position: 7px -394px;
+    }
+
+    .mininavRight .pengyou:hover {
+        background-position: -76px -394px;
+    }
+
+    .mininavRight {
+        float: right;
+        color: #c7c7c7;
+        line-height: 28px;
+    }
+
+    .mininavRight a {
+        color: #666;
+    }
+
+    .mininavRight .qqNameLayout {
+        margin-right: 4px;
+        color: #c7c7c7;
+    }
+
+    .mininavRight .qqName {
+        margin-right: 12px;
+        color: #666;
+        float: left;
+    }
+
+    .mininavRight .weibo {
+        font-family: Tahoma, "宋体";
+        padding: 0 7px;
+        display: block;
+        height: 28px;
+        float: left;
+        text-indent: 17px;
+    }
+
+    .mininavRight .weibo:hover {
+        color: #fff;
+        background-color: #458fce;
+    }
+
+    .mininavRight .qzone {
+        font-family: Tahoma, "宋体";
+        padding: 0 7px;
+        display: block;
+        height: 28px;
+        float: left;
+        text-indent: 22px;
+    }
+
+    .mininavRight .qzone:hover {
+        color: #fff;
+        background-color: #458fce;
+    }
+
+    .mininavRight .mail {
+        font-family: Tahoma, "宋体";
+        padding: 0 7px;
+        display: block;
+        height: 28px;
+        float: left;
+        text-indent: 19px;
+    }
+
+    .mininavRight .mail:hover {
+        color: #fff;
+        background-color: #458fce;
+    }
+
+    .mininavRight .pengyou {
+        font-family: Tahoma, "宋体";
+        padding: 0 7px;
+        display: block;
+        height: 28px;
+        float: left;
+        text-indent: 20px;
+    }
+
+    .mininavRight .pengyou:hover {
+        color: #fff;
+        background-color: #458fce;
+    }
+
+    .loginSmartBox {
+        width: 120px;
+        height: auto;
+        background: #fffbef;
+        position: absolute;
+        top: 28px;
+        z-index: 100;
+    }
+
+    .loginSmartTop {
+        width: 120px;
+        height: 3px;
+        overflow: hidden;
+        background-position: -350px -210px;
+    }
+
+    .loginSmartBottom {
+        width: 120px;
+        height: 3px;
+        overflow: hidden;
+        background-position: -350px -230px;
+    }
+
+    .loginSmartContent {
+        width: 118px;
+        border-left: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .loginSmartInner {
+        width: 116px;
+        border-left: 1px solid #f4d9a4;
+        border-right: 1px solid #f4d9a4;
+    }
+
+    .loginSmartInner ul {
+        width: 100%;
+        padding: 2px 0;
+    }
+
+    .loginSmartInner li {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        color: #666;
+        text-indent: 8px;
+        text-align: left;
+    }
+
+    .loginSmartInner li a {
+        color: #666;
+    }
+
+    .loginSmartInner li a:hover span {
+        color: #cd0200;
+    }
+
+    .loginSmartInner li a span,
+    .loginSmartInner li a:hover span {
+        font-family: Tahoma;
+    }
+
+    #pengyouIcon {
+        position: relative;
+        z-index: 10000;
+    }
+
+    #mailIcon {
+        position: relative;
+        z-index: 10000;
+    }
+
+    #qzoneIcon {
+        position: relative;
+        z-index: 10000;
+    }
+
+    #weiboIcon {
+        position: relative;
+        z-index: 10000;
+    }
+
+    #loginOut:hover {
+        text-decoration: underline;
+        color: #cd0200;
+    }
+
+    .loginBg {
+        width: 100%;
+        min-width: 1024px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 8888;
+        display: none;
+        background: url(//mat1.gtimg.com/www/images/qq2012/alphabg.png);
+        _background: #000;
+        _opacity: 0.3 _;
+        filter: alpha(opacity=30);
+    }
+
+    .mininavRight .qzone {
+        width: auto;
+    }
+
+    .mininavLeft div {
+        line-height: 14px;
+    }
+
+    .mininavRight div {
+        line-height: 28px;
+    }
+</style>
+<style type="text/css">
+    body,
+    h1,
+    h2,
+    p,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li {
+        margin: 0;
+        padding: 0
+    }
+
+    .loginWrap {
+        float: right;
+        height: 35px
+    }
+
+    .login {
+        text-align: center;
+        font: 12px/35px Tahoma, "宋体";
+        margin-right: 5px
+    }
+
+    .login a {
+        text-decoration: none;
+        outline: 0
+    }
+
+    .login a:hover {
+        text-decoration: none
+    }
+
+    .login .active {
+        color: #3a9bea
+    }
+
+    .login em {
+        font-style: normal
+    }
+
+    .login img {
+        border: none
+    }
+
+    .quickArea {
+        position: relative;
+        float: left
+    }
+
+    .quickLink {
+        float: left;
+        height: 35px;
+        display: block;
+        padding: 0 8px 0 27px;
+        overflow: hidden;
+        background-repeat: no-repeat
+    }
+
+    .clearfix {
+        *zoom: 1
+    }
+
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both
+    }
+
+    .quickLink em {
+        display: none
+    }
+
+    .loginBtn {
+        width: 27px;
+        height: 24px;
+        margin: 7px 5px 0 10px
+    }
+
+    .logined .hover .quickLink {
+    }
+
+    .loginBtn:hover {
+        background-position: 0 -42px
+    }
+
+    .infoNum {
+        text-decoration: none;
+        display: block
+    }
+
+    .quickArea dl {
+        width: 102px;
+        padding: 6px 14px;
+        background: #fff;
+        position: absolute;
+        top: 35px;
+        font: 12px/23px Tahoma, "宋体";
+        border: 1px solid #e2e2e2;
+        border-width: 0 1px 1px;
+        text-align: left;
+        display: none;
+        box-shadow: 1px 2px 2px #e2e2e2;
+        z-index: 9999
+    }
+
+    .quickArea dl a span {
+        margin-left: 10px
+    }
+
+    .loginNav {
+        float: left;
+        border-left: 1px solid #d6d6d6;
+        height: 26px;
+        line-height: 18px;
+        margin: 6px 0 0 20px;
+        padding-left: 9px
+    }
+
+    #login_layer_bg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background: url(//mat1.gtimg.com/www/login/images/alphabg.png);
+        _background: #000;
+        _opacity: 0.3;
+        _filter: alpha(opacity=30);
+        height: 100%
+    }
+
+    #login_layer_main {
+        position: fixed;
+        _position: absolute;
+        width: 490px;
+        height: 382px;
+        top: 50%;
+        left: 50%;
+        margin: -165px 0 0 -276px;
+        z-index: 10000
+    }
+
+    /* user */
+
+    .user {
+        font-family: tohama;
+        padding: 5px 0 4px 10px
+    }
+
+    .user .menu-hd {
+        width: 28px;
+        line-height: 0;
+        margin-top: 0;
+        margin-right: 5px;
+        display: block;
+        position: relative;
+        text-decoration: none
+    }
+
+    .user img {
+        vertical-align: top
+    }
+
+    .user .menu-hd img {
+        width: 22px;
+        height: 22px;
+        overflow: hidden;
+        background: #d6edff;
+        padding: 2px
+    }
+
+    .user .menu-hd:hover .userVip {
+        visibility: visible
+    }
+
+    .user .menu-bd {
+        position: absolute;
+        top: 39px;
+        width: 185px;
+        display: none;
+        z-index: 9999
+    }
+
+    .user .menu-bd-in {
+        border: 1px solid #e2e2e2;
+        border-top: none;
+        background: #fff;
+        padding: 5px 10px 10px;
+        border-radius: 4px;
+        box-shadow: 1px 2px 2px #e2e2e2
+    }
+
+    .user .menu-hd .userVip .icon_member {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        right: -3px;
+        bottom: 0px;
+        padding: 0;
+        border: none;
+        background: none
+    }
+
+    .user .menu-bd .userVip {
+        margin-right: 10px
+    }
+
+    .picT-p {
+        width: 38px;
+        height: 38px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        padding: 2px;
+        float: left;
+        margin-right: 7px;
+        margin-top: 5px
+    }
+
+    .picT-t p {
+        line-height: 24px;
+        color: #666;
+        text-align: left
+    }
+
+    .picT-t a {
+        color: #333
+    }
+
+    .user .menu-bd .picT-p {
+        width: 38px;
+        height: 38px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        padding: 2px
+    }
+
+    .quickLink {
+        background-image: url(//mat1.gtimg.com/www/login/images/loginall_24_1x_v1.png);
+        _background-image: url(//mat1.gtimg.com/www/login/images/loginall_8_1x_v1.png)
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        .quickLink {
+            background-size: 62px auto;
+            background-image: url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)
+        }
+    }
+
+    @media only screen and (min--moz-device-pixel-ratio: 2) {
+        .quickLink {
+            background-size: 62px auto;
+            background-image: url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)
+        }
+    }
+
+    @media only screen and (-o-min-device-pixel-ratio: 2/1) {
+        .quickLink {
+            background-size: 62px auto;
+            background-image: url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)
+        }
+    }
+
+    @media only screen and (min-device-pixel-ratio: 2) {
+        .quickLink {
+            background-size: 62px auto;
+            background-image: url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)
+        }
+    }
+
+    /* sprite图 */
+
+    .loginBtn {
+        background-position: 0 0
+    }
+
+    .weiboLink {
+        background-position: 2px -87px
+    }
+
+    .qzoneLink {
+        background-position: 2px -130px
+    }
+
+    .qmailLink {
+        background-position: 2px -171px
+    }
+
+    .dyLink {
+        background-position: 2px -256px
+    }
+
+    .dyLike {
+        background-position: 2px -297px
+    }
+
+    /* color */
+
+    .login a {
+        color: #fff
+    }
+
+    /* 登录数字颜色 */
+
+    .login .menu-bd a {
+        color: #5c5c5c
+    }
+
+    /* 隐藏框内链接颜色 */
+
+    .login .menu-bd a:hover {
+        color: #000
+    }
+
+    /* 隐藏框内链接颜色 */
+
+    .logined .hover .quickLink {
+        color: #fff
+    }
+
+    /* 鼠标滑过背景色和字体颜色 */
+
+    .quickArea dl a span {
+        color: #5c5c5c
+    }
+
+    .loginBg_def {
+        background: #379be9
+    }
+
+    /*默认背景色*/
+
+    .loginBg_def .logined .hover .quickLink {
+        background-color: #1669ab
+    }
+
+    .loginBg_def .quickArea dl {
+        border-top: 1px solid #1669ab
+    }
+
+    .loginBg_green {
+        background: #539325
+    }
+
+    /*可配置的绿色*/
+
+    .loginBg_green .logined .hover .quickLink {
+        background-color: #3b7710
+    }
+
+    .loginBg_green .quickArea dl {
+        border-top: 1px solid #3b7710
+    }
+
+    .loginBg_darkgreen {
+        background: #329B97
+    }
+
+    /*可配置的深绿色*/
+
+    .loginBg_darkgreen .logined .hover .quickLink {
+        background-color: #00847D
+    }
+
+    .loginBg_darkgreen .quickArea dl {
+        border-top: 1px solid #00847D
+    }
+
+    .loginBg_red {
+        background: #c32728
+    }
+
+    /*可配置的红色*/
+
+    .loginBg_red .logined .hover .quickLink {
+        background-color: #a20202
+    }
+
+    .loginBg_red .quickArea dl {
+        border-top: 1px solid #a20202
+    }
+
+    .loginBg_black {
+        background: #000
+    }
+
+    /*可配置的黑色*/
+
+    .loginBg_black .logined .hover .quickLink {
+        background-color: #333
+    }
+
+    .loginBg_black .quickArea dl {
+        border-top: 1px solid #666
+    }
+
+    .loginBg_white {
+        background: #fff;
+        color: #5c5c5c
+    }
+
+    /*可配置的白色*/
+
+    .loginBg_white .logined .hover .quickLink {
+        background-color: #cc1c1c;
+        color: #fff
+    }
+
+    .loginBg_white #oneKey {
+        width: 73px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #e6e6e6;
+        border-width: 0 1px;
+        color: #5c5c5c;
+        background: none;
+        margin: 0;
+        padding: 0
+    }
+
+    .loginBg_white #oneKey:hover {
+        color: #fff;
+        background: #cc1c1c
+    }
+
+    .loginBg_white #oneKey em {
+        display: block
+    }
+
+    .loginBg_white .quickLink {
+        color: #5c5c5c
+    }
+
+    .loginBg_white .weiboLink {
+        background-position: 0 -335px
+    }
+
+    .loginBg_white .qzoneLink {
+        background-position: 0 -375px
+    }
+
+    .loginBg_white .qmailLink {
+        background-position: 0 -412px
+    }
+
+    .loginBg_white .dyLink {
+        background-position: 0 -452px
+    }
+
+    .loginBg_white .dyLike {
+        background-position: 0 -495px
+    }
+
+    .loginBg_white .weiboLink:hover,
+    .loginBg_white .logined .weiboLink {
+        background-position: 0 -535px
+    }
+
+    .loginBg_white .qzoneLink:hover,
+    .loginBg_white .logined .qzoneLink {
+        background-position: 0 -575px
+    }
+
+    .loginBg_white .qmailLink:hover,
+    .loginBg_white .logined .qmailLink {
+        background-position: 0 -612px
+    }
+
+    .loginBg_white .dyLink:hover,
+    .loginBg_white .logined .dyLink {
+        background-position: 0 -652px
+    }
+
+    .loginBg_white .dyLike:hover,
+    .loginBg_white .logined .dyLike {
+        background-position: 0 -695px
+    }
+
+    .loginBg_white .logined .weiboLink:hover {
+        background-position: 0 -87px
+    }
+
+    .loginBg_white .logined .qzoneLink:hover {
+        background-position: 0 -129px
+    }
+
+    .loginBg_white .logined .qmailLink:hover {
+        background-position: 0 -170px
+    }
+
+    .loginBg_white .logined .dyLink:hover {
+        background-position: 0 -254px
+    }
+
+    .loginBg_white .logined .dyLike:hover {
+        background-position: 0 -296px;
+        background-color: #cc1c1c
+    }
+
+    .loginBg_white .logined .hover .quickLink {
+        background-color: #cc1c1c;
+        color: #fff
+    }
+
+    .my_header .w1000 .p1 a {
+        color: #666;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+</style>
+<!--没有用的东西 开始-->
+<div class="loginWrap loginBg_white" style="display: none;" id="loginWrap">
+    <div class="login" id="login">
+        <div class="quickArea menu">
+            <a href="javascript:;" role="button" aria-haspopup="true" aria-pressed="false" id="oneKey"
+               class="quickLink loginBtn" onclick="userLogin()" bosszone="onekey"><em>一键登录</em></a>
+        </div>
+        <div class="quickArea menu">
+            <a href="http://t.qq.com" id="weiboLink" target="_blank" class="quickLink weiboLink" aria-expanded="true"
+               bosszone="gqweibo" title="微博"><em>微博</em></a>
+        </div>
+        <div class="quickArea menu">
+            <a href="http://qzone.qq.com" id="qzoneLink" target="_blank" class="quickLink qzoneLink"
+               aria-expanded="true" bosszone="gqqzone" title="Qzone"><em>Qzone</em></a>
+        </div>
+        <div class="quickArea menu">
+            <a href="http://mail.qq.com" id="qmailLink" target="_blank" class="quickLink qmailLink" aria-expanded="true"
+               bosszone="gqqmail" title="QQ邮箱"><em>QQ邮箱</em></a>
+        </div>
+        <!--
+	<div class="quickArea menu">
+		<a href="http://dy.qq.com" id="dyLink" target="_blank" class="quickLink dyLink" aria-expanded="true" bosszone="booking" title="订阅"><em>订阅</em></a>
+	</div>
+-->
+        <div class="quickArea menu">
+            <a href="http://ilike.qq.com/" id="dyLike" target="_blank" class="quickLink dyLike" aria-expanded="true"
+               bosszone="collectinpage" title="收藏"><em>收藏</em></a>
+        </div>
+    </div>
+</div>
+<!--没有用的东西 结束-->
+<div class="my_header clearfix">
+    <div class="w1000 clearfix">
+        <div class="p1"><a href="http://hb.qq.com/">回到大楚网</a></div>
+        <div class="p2">
+            <div class="p2_1" style="border-right:none;">
+
+            </div>
+            <div class="p2_1 qq_login" id="qq_login">
+                登录
+            </div>
+            <div class="p2_1 qq_login_info" id="qq_login_info">
+                <span class="qq_icon">
+                    <img src=""
+                         alt="" id="qq_icon">
+                </span>
+                <span class="qq_name" id="qq_name"></span>
+                <span class="qq_logout" id="qq_logout">退出</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//mat1.gtimg.com/www/asset/seajs/sea.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/hb/js/common/jquery/jquery-1.8.3.min.js"></script>
+<script src="//mat1.gtimg.com/hb/chenz/bl08/js/jquery.cookie.js"></script>
+<!--pt_login-->
+<script src="//mat1.gtimg.com/hb/baoliao2017/js/qq_login.js"></script>
+
+<div class="page page1"></div>
+<div class="page_content w1200 clearfix">
+    <div class="left_part">
+        <div class="page page2">
+            <div class="my_form">
+                <!--<input type="hidden" name="form_27958_1" myRequired="1" id="attachments" value="">-->
+                <div class="uppic_wrap_shadow">
+                    <div class="uppic_wrap">
+                        <iframe src="http://baoliao.hb.qq.com/upload/iframe" frameborder="no" border="0" marginwidth="0"
+                                marginheight="0" scrolling="no" width="486" height="238" name="uploadPic"
+                                id="uploadPic"></iframe>
+                    </div>
+                </div>
+                <div class="logo">网友投诉</div>
+                <div class="input">
+                    <input type="text" class="my_input" placeholder="请输入标题" name="" id="title">
+                </div>
+                <div class="input_wrap clearfix">
+                    <div class="input input1">
+                        <input type="text" class="my_input" placeholder="请输入手机号码" maxlength="11" name="" id="phone">
+                    </div>
+                    <div class="input input2">
+                        <input type="text" class="my_input" placeholder="请输入验证码" maxlength="6" name=""
+                               id="inputCode">
+                    </div>
+                    <div class="code_btn" id="code">发送验证码</div>
+                </div>
+                <div class="input textarea">
+                    <textarea class="my_textarea" placeholder="填写内容，请注明发生时间、地点" id="content"></textarea>
+                </div>
+                <div class="pp clearfix">
+                    <div class="up_pics">
+                        <div class="up_btn" id="up_btn">图片上传</div>
+                    </div>
+                    <div class="join_btn" id="post_button">发&nbsp;&nbsp;送</div>
+                </div>
+            </div>
+        </div>
+        <div class="page22">
+            <div class="logo">今日聚焦</div>
+            <div id="slideBox" class="slideBox">
+                <div class="hd">
+                    <ul>
+                        <!--焦点图的点点个数 一个li代表1个-->
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                   <ul>
+
+
+
+<li>
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3351" target="_blank">
+                                <img src="http://img1.gtimg.com/hb/pics/hv1/64/234/2274/147926584.jpg" width="808"
+                                     height="410"/>
+                            </a>
+                            <div class="shadow_bg">
+                                <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3351" target="_blank">
+                                    电信太霸道！ 限制老用户享受套餐新业务</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+<li>
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3344" target="_blank">
+                                <img src="http://img1.gtimg.com/hb/pics/hv1/73/239/2274/147927868.jpg" width="808"
+                                     height="410"/>
+                            </a>
+                            <div class="shadow_bg">
+                                <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3344" target="_blank">
+                                     阳逻盛世长江楼盘2年不交房</a>
+                            </div>
+                        </li>
+
+
+
+ <li>
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3349" target="_blank">
+                                <img src="http://img1.gtimg.com/hb/pics/hv1/177/238/2274/147927717.jpg" width="808"
+                                     height="410"/>
+                            </a>
+                            <div class="shadow_bg">
+                                <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3349" target="_blank">
+                                    汉阳黄金口岸经济适用房5年难办房产证</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+<li>
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3347" target="_blank">
+                                <img src="http://img1.gtimg.com/hb/pics/hv1/221/238/2274/147927761.jpg" width="808"
+                                     height="410"/>
+                            </a>
+                            <div class="shadow_bg">
+                                <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3347" target="_blank">
+                                     摩拜ofo堆积成山让人寸步难行</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+<li>
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3353" target="_blank">
+                                <img src="http://img1.gtimg.com/hb/pics/hv1/155/239/2274/147927950.jpg" width="808"
+                                     height="410"/>
+                            </a>
+                            <div class="shadow_bg">
+                                <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=3353" target="_blank">
+                                    
+高层小区电梯全部停摆</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              
+                                                                   </ul>
+                </div>
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+        <div class="page33"></div>
+        <div class="page page4 common">
+            <div class="w1000 head_image">
+                <div class="text">出行类</div>
+                <img src="//mat1.gtimg.com/hb/chenz/y315/images/7.png" alt="" width="1000" height="112">
+            </div>
+            <div class="w1000 my_item clearfix">
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2333">我们在网上预订酒店成功竟被要求取消</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2333">
+                                您好，我想反应一个问题，2.25日我在去哪儿网定了开封鱼跃龙门客栈，入住时间是4月5日，预订成功！不久就来了商家电话，说这个不能定，不能住，清明节价格没出来，后台忘记取消了，所以我才能点进去，让我退掉，不然到了酒店也入住不了[详情]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="#">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/229/226/2265/147339484.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180305/007296.htm">酒店坐地起价取消顾客订单 经投诉已退还其房费</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180305/007296.htm">
+                                        记者联系上开封鱼跃龙门客栈工作人员，她解释说，酒店在节假日期间都会涨价，客栈没办法以预订的价格接待她。                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2400">我参与返现活动，过年后钱却没到账</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2400">
+                                黄冈市均天汽车俱乐部对外宣称交现金三千元办理加油卡，所交现金分十个月到帐并且每个月可到帐450元，共计4500元，此举吸收了大量人员前往办理，办理的加油卡只充值了两个月(两次共900元)后便不再返还费用了[详情]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180307/006821.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/189/227/2265/147339699.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180307/006821.htm">黄冈一俱乐部遭车友投诉 老板：我们也是受害者</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180307/006821.htm">
+                                        爆料人李女士向记者出具了一张盖章为“钧天俱乐部现金收讫”的收据，收据上收款单位“湖北钧天汽车俱乐部”。
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page5 common">
+            <div class="w1000 head_image">
+                <div class="text">购物类</div>
+                <img src="//mat1.gtimg.com/hb/chenz/y315/images/8.png" alt="" width="1000" height="134">
+            </div>
+            <div class="w1000 my_item clearfix">
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2337">网上买的橙子树现在变成了便宜桔子树</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2337">
+                                2016年初在淘宝网上购买了1500棵赣南脐橙苗，当时是以五元一棵的价格购买的，但是到2017年树苗挂果，发现大部分都是结的橘子，找当初购买的商家，不给予回应，找淘宝维权，也说过了维权期[详情]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="#">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/222/227/2265/147339732.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180307/017167.htm">女子网购橙子树苗 种植一年多发现是便宜桔子</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180307/017167.htm">
+                                        记者今日拨打归属地为江苏宿迁的叶某电话，他称“让买家联系，店名都不知道换了多少个了。”
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2334">买的一口锅有问题厂家答应换锅至今未换</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2334">
+                                去年在超市买了一口炒菜用的爱仕达牌铁锅。结果两个月后锅出现多个孔，不能用。虽然厂家同意换锅，但一直拖着至今没给换。这种情况该怎么办？[详情]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180307/017738.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/228/227/2265/147339738.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180307/017738.htm">婆婆超市买锅 使用两月后铁锅多处“穿孔”</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180307/017738.htm">
+                                        陈婆婆说，大约是去年六月，她到超市买锅，两个月后发现锅出现了孔。去年12月底，她到超市要求更换。
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page6 common">
+            <div class="w1000 head_image">
+                <div class="text">食品类</div>
+                <img src="//mat1.gtimg.com/hb/chenz/y315/images/6.png" alt="" width="1000" height="112">
+            </div>
+            <div class="w1000 my_item clearfix">
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2406">
+餐厅人去楼空，会费也没退</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2406">
+                                
+曲女士带着朋友到该餐厅吃饭，发现整个餐厅已经人去楼空。当时她第一时间联系了店方，对方表示肯定会退还会费，但如
+
+今1个多月过去了，却一直没动静。
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="
+http://hb.qq.com/a/20180309/004317.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/238/206/2266/1473994
+
+18.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="
+http://hb.qq.com/a/20180309/004317.htm
+">婆
+武汉“鱼满塘”餐馆关门停业 却迟迟未退还会费</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="
+http://hb.qq.com/a/20180309/004317.htm
+">
+                                        记者随后联系上餐厅相关负责人，该负责人称，目前餐厅正在做资产清算，后续她们肯定会及时退还会费。
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            十堰一家火锅店老板用罂粟壳                        </div>
+                        <div class="p3">
+                                                           十堰一家火锅店老板给自己的火锅底料加上“秘方”，花了30元钱买了几个罂粟果子，并于当晚在火锅店厨房里用各种火锅原料和罂粟果子兑在一起熬制火锅底料。
+                                                    </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180202/003522.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/40/6/2266/147348220.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180202/003522.htm">火锅店老板玩“猫腻” 用“罂粟壳”当底料被查</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180202/003522.htm">
+                                        
+丹江口市一位无良老板竟然在火锅底料上做起了“猫腻”，用罂粟壳当底料。</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page7 common">
+            <div class="w1000 head_image">
+                <div class="text">住房类</div>
+                <img src="//mat1.gtimg.com/hb/chenz/y315/images/5.png" alt="" width="1000" height="134">
+            </div>
+            <div class="w1000 my_item clearfix">
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2405">新房装修后卧室没空间走路</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2405">
+                                我的新房位于洪山区团结大道金地自在城K2小区，新房装修完工后，卧室放了衣柜和床，就没多少空间走路，设计师石先生还单独收取了4800元的设计费。                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180314/022463.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/102/206/2266/147399282.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180314/022463.htm">
+新房装修后卧室没空间走路 设计师还多收设计费</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180314/022463.htm">
+                                      记者陪同陈女士来到位于徐东万利广场的湖北岚庭装饰工程有限公司，公司行政、售后、设计等部门负责人非常重视。</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2405">装修才一年多墙壁就出现脱落</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2405">
+                                
+我在东湖高新曙光星城B区10栋有一套80多平方米两室一厅的房子，花6.6万元半包请立发装饰公司进行了装修。前不久，卧室的石膏板发生爆裂，摇摇欲坠。                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180313/024307.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/166/206/2266/147399346.
+
+jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180313/024307.htm">新房装修一年多墙壁脱落 项目经理换公司不管了</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180313/024307.htm">
+                                       记者来到许女士家中看到，她家餐厅餐桌旁的墙壁踢脚线上方有一处半米长的脱落带，用手轻轻一摸，碎块直往下掉。</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page8 common">
+            <div class="w1000 head_image">
+                <div class="text">其它类</div>
+                <img src="//mat1.gtimg.com/hb/chenz/y315/images/9.png" alt="" width="1000" height="110">
+            </div>
+            <div class="w1000 my_item clearfix">
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2335">我们办理了健身卡现在健身房却停业了</a>
+                        </div>
+                        <div class="p3">
+                            <a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=19&id=2335">
+                                在空中健身金桥一号店办理了健身卡，费用从几千到几万不等，另外还有私教课程，现在健身房在未通知的情况下停业，服务电话不接，门店贴了欠租金135万告示，没有任何负责人出面，现有会员2000多人，涉案金额高达上千万。[详情]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180306/002566.htm">
+                                        <img src="
+http://img1.gtimg.com/hb/pics/hv1/235/227/2265/147339745.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180306/002566.htm">武汉一健身会馆停业一个月 会员要求退款未果</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180306/002566.htm">
+                                        楚天都市报记者来到位于江岸区兴业路的空中健身金桥壹号店，数十名会员聚集在店内讨说法。                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item_wrap">
+                    <div class="left">
+                        <div class="p1">
+                            <a href="#">网友投诉</a>
+                        </div>
+                        <div class="p2">
+                            <a href="#">
+预订酒店简单想退掉太麻烦</a>
+                        </div>
+                        <div class="p3">
+                            <a href="#">
+                                我在网上预订酒店时，勾选购买了酒店取消险，结果因行程改变需要申请赔付时，却被告知要提交诸多证明。酒店是帮老板预订的，购买保险时都不知道申请赔付这么麻烦。[详情]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="p1">记者跟进</div>
+                        <div class="detail_wrap clearfix">
+                            <div class="img">
+                                <a href="#">
+                                    <a href="http://hb.qq.com/a/20180314/022910.htm">
+                                        <img src="http://img1.gtimg.com/hb/pics/hv1/68/208/2266/14739975
+
+8.jpg" alt="" width="160"
+                                             height="178">
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="pp1">
+                                    <a href="http://hb.qq.com/a/20180314/022910.htm">
+男子订酒店时已买取消险 申请赔付却遇麻烦</a>
+                                </div>
+                                <div class="pp2">
+                                    <a href="http://hb.qq.com/a/20180314/022910.htm">
+                                        记者就此拨打了飞猪客服热线，其工作人员之后回复称，客户在勾选购买取消险时，会有相关细则。
+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right_part">
+        <!--维权信息-->
+        <div class="activist_wrap">
+            <div class="title">维权信息</div>
+            <div class="paginator_wrap">
+                <!--<div class="item">-->
+                <!--<div class="i_title">-->
+                <!--<a href="#">测试标题</a>-->
+                <!--</div>-->
+                <!--<div class="detail">-->
+                <!--<a href="#">测试详情</a>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div class="paginator_style">
+                <div id="pagination" class="pagination2"></div>
+            </div>
+        </div>
+        <div class="pp">
+            <div class="p1">消协提示</div>
+            <div class="p2">
+                <a href="http://hb.qq.com/a/20180307/034011.htm">
+                    中国消费者协会公布2018年消费维权年主题为“品质消费美好生活”:倡导经营者以品质消费为指引，倾听消费者声音，重视消费者诉求，不断提升产品和服务品质，满足消费者对品质消费的需求。[详情]                </a>
+            </div>
+        </div>
+        <div class="pp">
+            <div class="p1">最高法：不支持职业打假人
+</div>
+            <div class="p2">
+                <a href="http://hb.qq.com/a/20180311/014510.htm">
+                    最高人民法院办公厅(法办函【2017】181号)中表明：目前可以考虑在除购买食品、药品之外的情形，逐步限制职业打假人的牟利性打假行为。 </a>
+            </div>
+        </div>
+        <div class="pp">
+            <div class="p1">免责声明</div>
+            <div class="p2">
+                <a href="#">
+                    楚天关注3·15的宗旨是充分发挥网络媒体的信息桥梁和舆论监督作用，为网友提供客观反映问题和现象、理性表达意见和建议的在线便民通道，并如实地将网友提供的线索反馈给相关部门单位。公告全文>>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    seajs.config({
+        alias: {
+            'ui': 'lib/ui'
+        },
+        preload: ['ui']
+    });
+
+    seajs.use('//mat1.gtimg.com/hb/chenz/bl08/www/asset/login/oneLogin_v1.5.1', function () {
+        login.init();
+    });
+
+    function hb_get_qq_info(b) {
+        $("#qq_icon").attr('src', b.Face);
+        $("#qq_name").text("您好，" + b.nick);
+        $("#qq_login").hide();
+        $("#qq_login_info").show();
+        $("#uploadPic").attr('src', "http://baoliao.hb.qq.com/upload/iframe?random=" + Math.random());
+        window.qq_info = {
+            'qq': parseInt($.cookie('uin').substring(1)),
+            'nick': b.nick,
+            'head': b.Face
+        };
+    }
+
+    function hb_qq_loginOut() {
+        D.login.loginOut(function () {
+            window.location.reload(true);
+        });
+
+    }
+
+    $("#qq_login").on('click', function () {
+        check_qq_login();
+    });
+
+    $("#qq_logout").on("click", function () {
+        window.login.loginOut();
+    });
+
+    function my_login() {
+        D.login.getLogin();
+        D.login(
+            function () {
+                $("#uploadPic").attr('src', "http://baoliao.hb.qq.com/upload/iframe?random=" + Math.random());
+                window.location.reload(true);
+            },
+            function () {
+                alert("请先登录QQ，在进行操作");
+                $(".uppic_wrap_shadow").hide();
+            }
+        );
+    }
+
+
+    function check_qq_login() {
+        if (!window.login.isLogin()) {
+//            userLogin();
+            my_login();
+        }
+
+        return window.login.isLogin();
+    }
+</script>
+<!--数据提交-->
+<div style="display: none;" id="form">
+    <iframe style="display:none" frameborder="0" id="baoliaocg" name="baoliaocg"></iframe>
+    <form name="form1" id="formreport" action="http://baoliao.hb.qq.com/api/Report/saveReport2" method="post"
+          target="baoliaocg">
+        <input type="hidden" class="MOD_CSRF_TOKEN" name="MOD_CSRF_TOKEN" value="token"/>
+        <input type="hidden" class="uin" name="uin" value=""/>
+        <input type="hidden" class="username" name="username" value=""/>
+        <input type="hidden" class="user_picture" name="user_picture" value=""/>
+        <input type="hidden" class="attachments" id="attachments" name="attachments" value=""/>
+        <input type="hidden" class="source" name="source" value="2"/>
+        <input type="hidden" class="upload_num" value="0"/>
+        <input type="hidden" class="cateid" value="19" name="cateid">
+        <input type="hidden" class="phone" value="1" name="phone">
+        <input type="hidden" class="f_verify" value="" name="f_verify">
+        <input type="hidden" class="title" value="" name="title">
+        <input type="hidden" class="content" value="" name="content">
+    </form>
+</div>
+<script>
+    var messenger = new Messenger('parent', 'Messenger'),
+        uploadPic = document.getElementById('uploadPic');
+    messenger.listen(function (msg) {
+        if (msg == 'close') {
+            $(".uppic_wrap_shadow").hide();
+        } else {
+            if ($('#attachments').val()) {
+                $('#attachments').val($('#attachments').val() + ',image_' + msg);
+            } else {
+                $('#attachments').val('image_' + msg);
+            }
+        }
+    });
+
+    messenger.addTarget(uploadPic.contentWindow, 'uploadPic');
+
+</script>
+<script src="//mat1.gtimg.com/hb/chenz/cj0808/js/jquery.SuperSlide.js"></script>
+<script src="//mat1.gtimg.com/hb/chenz/y315001/js/jqpaginator.min.js"></script>
+<script>
+
+    (function (g, i, d) {
+        var a = 'placeholder' in i.createElement('input'),
+            e = 'placeholder' in i.createElement('textarea'),
+            j = d.fn,
+            c = d.valHooks,
+            l, k;
+        if (a && e) {
+            k = j.placeholder = function () {
+                return this
+            };
+            k.input = k.textarea = true
+        } else {
+            k = j.placeholder = function () {
+                var m = this;
+                m.filter((a ? 'textarea' : ':input') + '[placeholder]').not('.placeholder').bind({
+                    'focus.placeholder': b,
+                    'blur.placeholder': f
+                }).data('placeholder-enabled', true).trigger('blur.placeholder');
+                return m
+            };
+            k.input = a;
+            k.textarea = e;
+            l = {
+                get: function (n) {
+                    var m = d(n);
+                    return m.data('placeholder-enabled') && m.hasClass('placeholder') ? '' : n.value
+                },
+                set: function (n, o) {
+                    var m = d(n);
+                    if (!m.data('placeholder-enabled')) {
+                        return n.value = o
+                    }
+                    if (o == '') {
+                        n.value = o;
+                        if (n != i.activeElement) {
+                            f.call(n)
+                        }
+                    } else {
+                        if (m.hasClass('placeholder')) {
+                            b.call(n, true, o) || (n.value = o)
+                        } else {
+                            n.value = o
+                        }
+                    }
+                    return m
+                }
+            };
+            a || (c.input = l);
+            e || (c.textarea = l);
+            d(function () {
+                d(i).delegate('form', 'submit.placeholder', function () {
+                    var m = d('.placeholder', this).each(b);
+                    setTimeout(function () {
+                        m.each(f)
+                    }, 10)
+                })
+            });
+            d(g).bind('beforeunload.placeholder', function () {
+                d('.placeholder').each(function () {
+                    this.value = ''
+                })
+            })
+        }
+
+        function h(n) {
+            var m = {}, o = /^jQuery\d+$/;
+            d.each(n.attributes, function (q, p) {
+                if (p.specified && !o.test(p.name)) {
+                    m[p.name] = p.value
+                }
+            });
+            return m
+        }
+
+        function b(o, p) {
+            var n = this,
+                q = d(n),
+                m;
+            if (n.value == q.attr('placeholder') && q.hasClass('placeholder')) {
+                m = n == i.activeElement;
+                if (q.data('placeholder-password')) {
+                    q = q.hide().next().show().attr('id', q.removeAttr('id').data('placeholder-id'));
+                    if (o === true) {
+                        return q[0].value = p
+                    }
+                    q.focus()
+                } else {
+                    n.value = '';
+                    q.removeClass('placeholder')
+                }
+                m && n.select()
+            }
+        }
+
+        function f() {
+            var r, m = this,
+                q = d(m),
+                n = q,
+                p = this.id;
+            if (m.value == '') {
+                if (m.type == 'password') {
+
+                    if (!q.data('placeholder-textinput')) {
+                        try {
+                            r = q.clone().attr({
+                                type: 'text'
+                            })
+                        } catch (o) {
+                            r = d('<input>').attr(d.extend(h(this), {
+                                type: 'text'
+                            }))
+                        }
+                        r.removeAttr('name').data({
+                            'placeholder-password': true,
+                            'placeholder-id': p
+                        }).bind('focus.placeholder', b);
+                        q.data({
+                            'placeholder-textinput': r,
+                            'placeholder-id': p
+                        }).before(r)
+                    }
+                    q = q.removeAttr('id').hide().prev().attr('id', p).show()
+                }
+                q.addClass('placeholder');
+                if (m.type == 'password') {
+                    q[0].value = $(q[0]).attr("id");
+
+                } else {
+                    q[0].value = q.attr('placeholder');
+                }
+
+            } else {
+                q.removeClass('placeholder')
+            }
+        }
+    }(this, document, jQuery));
+</script>
+<script>
+    $(document).ready(function () {
+        $(".slideBox").slide({mainCell: ".bd ul", effect: "left", autoPlay: true});
+
+        $('input, textarea').placeholder();
+        $("#uploadPic").attr('src', "http://baoliao.hb.qq.com/upload/iframe?random=" + Math.random());
+        $("#up_btn").on("click", function () {
+            if (window.login.isLogin()) {
+                $('#uploadPic').attr('src', $('#uploadPic').attr('src'));
+                $(".uppic_wrap_shadow").show();
+            } else {
+                check_qq_login()
+            }
+        });
+
+        var code_time;
+
+        //获取验证码
+        $("#code").on('click', function () {
+
+            if (parseInt($(this).attr('data-countdown'))) {
+                return;
+            }
+
+            var phone = $("#phone").val();
+            var phoneReg = /^1[358][0-9]{9}$/;
+            if (!phoneReg.test(phone)) {
+                alert("请填写手机号码");
+                return false;
+            }
+
+            $.ajax({
+                url: "http://baoliao.hb.qq.com/api/report/sendSMS?tel=" + phone,
+                dataType: 'jsonp',
+                processData: false,
+                type: 'get',
+                success: function (data) {
+
+                    if (data.state == -1) {
+                        alert("请稍后尝试点击发送");
+                    } else {
+
+                        var count_down = 60;
+
+                        $("#code").attr('data-countdown', 1);
+
+                        $("#code").text(count_down);
+
+                        code_time = window.setInterval(function () {
+
+                            if (count_down == 0) {
+                                clearTimeout(code_time);
+                                $("#code").text("发送验证码");
+                                $("#code").attr('data-countdown', 0);
+                                return;
+                            }
+
+
+                            count_down = count_down - 1;
+
+                            $("#code").text(count_down);
+
+                        }, 1000);
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert('error');
+                    alert(XMLHttpRequest.status);
+                    alert(XMLHttpRequest.readyState);
+                    alert(textStatus);
+                }
+            });
+
+        });
+
+        //提交
+        function send_info() {
+
+            clearInterval(code_time);
+            $("#code").text("发送验证码");
+            $("#code").attr('data-countdown', 0);
+
+            if (!window.login.isLogin()) {
+                check_qq_login();
+                return;
+            }
+
+            //报料提交地址
+            var submit_url = "http://baoliao.hb.qq.com/api/Report/saveReport2";
+            //csrf token
+            var MOD_CSRF_TOKEN = "token";
+            $("#form .MOD_CSRF_TOKEN").val(MOD_CSRF_TOKEN);
+            //qq uin
+            var uin = qq_info.qq;
+            $("#form .uin").val(uin);
+            //QQ 昵称
+            var username = qq_info.nick;
+            $("#form .username").val(username);
+            //头像
+            var picture = qq_info.head;
+            $("#form .picture").val(picture);
+            var source = 1;
+            var cateid = 1;
+            //报料标题
+            var title = $("#title").val();
+            if (title == "") {
+                alert("请填内容标题");
+                return false;
+            }
+            $("#form .title").val(title);
+            //报料内容
+            var content = $("#content").val();
+            if (content == "") {
+                alert("请填写内容");
+                return false;
+            }
+            $("#form .content").val(content);
+            //手机
+            var phone = $("#phone").val();
+            var phoneReg = /^1[358][0-9]{9}$/;
+            if (!phoneReg.test(phone)) {
+                alert("请填写正确的手机号码");
+                return false;
+            }
+            $("#form .phone").val(phone);
+            //验证码
+            var f_verify = $('#inputCode').val();
+            if (f_verify == "") {
+                alert("请填写验证码");
+                return false;
+            }
+
+            $("#form .f_verify").val(f_verify);
+
+            $("#form form").submit();
+
+        }
+
+        //提交报料
+        $("#post_button").on('click', function () {
+            send_info();
+        });
+
+        var new_url = "http://baoliao.hb.qq.com/api/report/newIndexReportsList/num/10/cateid/19/pageno/";
+
+
+        paging(new_url);
+
+        function subDetail(str, len) {
+            var newStr;
+
+            if (str.length >= len) {
+                newStr = str.substr(0, len);
+            } else {
+                return str;
+            }
+
+            return newStr + "...";
+        }
+
+        function getDatas(url, num) {
+
+            var el = ".paginator_wrap";
+            $(el).empty();
+
+            $.ajax({
+                url: url + num,
+                dataType: 'jsonp',
+                success: function (data) {
+                    var datas = data.data.list;
+                    var len = datas.length;
+                    for (var i = 0; i < len; i++) {
+                        var html = '';
+                        html += '<div class="item"><div class="i_title"><a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=' + datas[i]['category_id'] + '&id=' + datas[i]['report_id'] + '">' + subDetail(datas[i]['title'], 14) + '</a></div><div class="detail"><a href="http://hb.qq.com/wmgq/new_detail.htm?cateid=' + datas[i]['category_id'] + '&id=' + datas[i]['report_id'] + '">' + subDetail(datas[i]['content'], 38) + '</a></div></div>';
+                        $(el).append(html);
+                    }
+                }
+            });
+        }
+
+        function paging(url) {
+
+            //获取分页数目
+            $.ajax({
+                url: url,
+                dataType: 'jsonp',
+                success: function (data) {
+                    var datas = data.data.list;
+                    var len = datas.length;
+
+                    // if (parseInt(data.data.page.count) < parseInt(data.data.page.size)) {
+                    //     return;
+                    // }
+
+                    $("#pagination").jqPaginator({
+                        totalCounts: parseInt(data.data.page.count),
+                        pageSize: 10,
+                        visiblePages: 6,
+                        currentPage: 1,
+                        prev: '<a class="prev" href="javascript:void(0);">&lt;<\/a>',
+                        next: '<a class="next" href="javascript:void(0);">&gt;<\/a>',
+                        page: '<a href="javascript:void(0);">{{page}}<\/a>',
+                        onPageChange: function (n) {
+                            getDatas(url, n);
+                        }
+                    });
+                }
+            });
+        }
+    });
+</script>
+<div style="width: 100%;margin: 0 auto;height: 250px;background:#fff;">
+    <style type="text/css">
+	<!-- /*取自总站*/ .footernew {color:#515151;text-align:center;font-size:12px;line-height:24px;width:1000px;margin:0
+	auto; padding-top:12px; background:#FFF;bg-color:#fff} .footernew a {color:#515151;text-decoration:none;}
+	.footernew a:visited {color:#515151;} .footernew a:hover {color:#bd0a01;text-decoration:underline;}
+	.footernew div{width:680px; margin:0 auto;} .footernew p{float:left;width:120px;height:50px;border:1px
+	solid #d2d2d2;padding:0;line-height:20px; margin:6px;font-size:12px;} .footernew
+	.fl{float:left;padding:3px;} .footernew .fr{float:right; width:72px;padding:5px
+	3px 0 3px;} -->
+	.top div.navzxb{ width:961px; }
+</style>
+<div align="center">
+	<div class="footernew">
+		<a href="https://myhb.dachuw.net/2018/12/04/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/"
+		target="_blank">
+			关于腾讯·大楚网
+		</a>
+		|
+		<a href="https://myhb.dachuw.net/2018/12/04/%E5%A4%A7%E6%A5%9A%E5%90%88%E4%BD%9C/"
+		target="_blank">
+			大楚合作
+		</a>
+		|
+		<a href="http://www.qq.com/contract.shtml" target="_blank">
+			服务条款
+		</a>
+		|
+		<a href="https://myhb.dachuw.net/category/%E5%A4%A7%E6%A5%9A%E5%B9%BF%E5%91%8A%E6%9C%8D%E5%8A%A1/"
+		target="_blank">
+			广告服务
+		</a>
+		|
+		<a href="https://myhb.dachuw.net/category/%E5%A4%A7%E6%A5%9A%E5%8A%A8%E6%80%81/%E4%BA%BA%E6%89%8D%E6%8B%9B%E8%81%98/"
+		target="_blank">
+			人才招聘
+		</a>
+		|
+		<a href="http://gongyi.qq.com/" target="_blank">
+			腾讯公益
+		</a>
+		|
+		<a href="https://myhb.dachuw.net/2018/12/04/%E5%A4%A7%E4%BA%8B%E8%AE%B0/"
+		target="_blank">
+			大事记
+		</a>
+		|
+		<a href="http://hb.qq.com/sitemap.htm" target="_blank">
+			sitemap
+		</a>
+		<br />
+		<a href="http://www.szga.gov.cn" target="_blank" rel="nofollow">
+			有害短信息举报
+		</a>
+		|
+		<a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">
+			抵制违法广告承诺书
+		</a>
+		|
+		<a class="lchot" href="http://www.gdis.cn/admin/newstext_netsun.asp" target="_blank"
+		rel="nofollow">
+			阳光·绿色网络工程
+		</a>
+		|
+		<a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">
+			版权保护投诉指引
+		</a>
+		|
+		<a href="http://y.china.com.cn/" target="_blank" rel="nofollow">
+			网络法制和道德教育基地
+		</a>
+		|
+		<a href="http://www.gdca.gov.cn/" target="_blank" rel="nofollow">
+			广东省通管局
+		</a>
+		|
+		<a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">
+			新闻信息服务许可证
+		</a>
+		|
+		<a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">
+			互联网出版许可证
+		</a>
+		<br>
+		<span style="line-height:30px;">
+			<a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">
+				粤府新函[2001]87号
+			</a>
+			<a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">
+				粤网文[2014]0633-233号
+			</a>
+			<a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">
+				网络视听许可证1904073号
+			</a>
+			增值电信业务经营许可证：
+			<a href="http://www.qq.com/icp.shtml" target="_blank" rel="nofollow">
+				粤B2-20090059
+			</a>
+			<a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">
+				B2-20090028
+			</a>
+			违法和不良信息举报电话：0755-83767606
+		</span>
+		<br>
+		<span style="font-family:Arial;">
+			Copyright &copy; 1998 - 2019 Tencent. All Rights Reserved
+		</span>
+	</div>
+	<div class="footernew footheight" style="width:1000px;" bossZone="footer">
+		<div style="width:680px;">
+			<!--<p>
+            <span class="fl"><a href="//www.sznet110.gov.cn/netalarm/index.jsp" target="_blank" rel="nofollow"><img width="36" height="43" border="0" alt="深圳网络警察报警平台" src="https://img1.qq.com/www/pics/816/816587.gif"></a></span>
+            <span class="fr"><a href="//www.sznet110.gov.cn/netalarm/index.jsp" target="_blank" rel="nofollow">深圳网络警<br>
+                    察报警平台</a></span>
+        </p>
+        <p>
+            <span class="fl"><a href="//www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101010155" target="_blank" rel="nofollow"><img width="36" height="42" border="0" alt="公共信息安全网络监察" src="https://img1.qq.com/www/pics/6743/6743671.jpg"></a></span>
+            <span class="fr"><a href="//www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101010155" target="_blank" rel="nofollow">公共信息安<br>
+                    全网络监察</a></span>
+        </p>-->
+        <p>
+            <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+            <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                    备案信息</a></span>
+        </p>
+        <p>
+            <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+            <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                    举报中心</a></span>
+        </p>
+        <p>
+            <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+            <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+        </p>
+        <p style="width:128px;height:52px;border:0;">
+            <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+        </p>
+        <p>
+            <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+            <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+        </p>
+		</div>
+	</div>
+	<div style="width:300px;margin:0 auto; padding:20px 0;">
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42010602000215"
+		style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+			<img src="http://mat1.gtimg.com/hb/chenz/baoliao/ghs.png" style="float:left;"
+			/>
+			<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+				鄂公网安备 42010602000215号
+			</p>
+		</a>
+	</div>
+	<div style="display:none;">
+		<!-- START NNR Site Census V5.1 -->
+		<!-- COPYRIGHT 2004 Nielsen // Netratings -->
+		<script language="javascript" src="//mat1.gtimg.com/ping.js">
+		</script>
+		<script language="javascript">
+			if (typeof(pgvMain) == 'function') {
+    pvCSTM = 'all';
+    pgvMain();
+}
+		</script>
+
+
+<script>
+<!--百度收录 zxb-->
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+		<!-- END NNR Site Census V5.1 -->
+		<script type="text/javascript" src="//tajs.qq.com/stats?sId=30786701"
+		charset="UTF-8">
+		</script>
+		<script>
+			//a标签和img标签链接替换https
+(function() {
+    function checkUrl(urlString) {
+
+        if (urlString != "") {
+            var reg = /^(http):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?/;
+            if (!reg.test(urlString)) {
+                return false;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    $("a").each(function(i, e) {
+        var href = $(e).attr('href');
+
+        if (checkUrl(href)) {
+            var new_href = href.replace('http://', 'https://');
+            $(e).attr('href', new_href);
+        }
+    });
+
+    $('img').each(function(i, e) {
+        var src = $(e).attr('src');
+
+        if (checkUrl(src)) {
+            var new_src = src.replace('http://', 'https://');
+            $(e).attr('src', new_src);
+        }
+    })
+}());
+		</script>
+	</div>
+</div>
+<style>
+#hb_home_nLeftWidth1,
+#hb_home_nRightWidth2,
+#hb_JJ_tonglan1,
+#hb_CY_tonglan1,
+#HBZ_JY_Width1,
+#hubei_jz_L_Button,
+#hubei_jz_Flag,
+#hubei_jz_R_Button,
+#hubei_jz_Width2,
+#HB_lvyou_Width1,
+#HB_JIANKANG_width2,
+#hb_hp_Width1,
+#hb_newLeftWidth,
+#hb_newRightWidth,
+#hb_newButton1,
+#HB_newqz,
+#hb_newButton2,
+#hb_JY_Button2,
+#HB_jy_qz,
+#hb_JY_Button1,
+#hb_news_xtl1,
+#HB_health_Button1,
+#HB_health_qizhi,
+#HB_health_Button2,
+#hb_home_zbRightWidth,
+#hb_home_zbLeftWidth,
+#hb_home2_Button2,
+#HB_home_qz,
+#hb_home2_Button1,
+#hbz_vent_Button2,
+#hbz_vent_Qizhi,
+#hbz_vent_Button1,
+#HBZ_TV_Width1,
+#HBZ_TV_Width2,
+#hb_home_zbLeftWidth,
+#hb_home_zbRightWidth,
+#hb_hp_L_Width,
+#hb_hp_R_Width,
+#hb_hp_Width2
+ {
+
+}
+</style>
+<!--[if !IE]>|xGv00|de11ddfdfdab5004d208947e9f3a94bc<![endif]-->
+</div>
+</body>
+</html><!--[if !IE]>|xGv00|02ad1f120f93ffcf50fb9252ce90374e<![endif]-->

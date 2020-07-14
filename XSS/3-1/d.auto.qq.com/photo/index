@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片新闻_腾讯汽车</title>
+    <meta name="keywords" content="汽车，腾讯汽车，手机，汽车大全，车型大全，汽车报价，汽车图片、汽车评测、汽车资讯，汽车新闻，评测" />
+    <meta name="description" content="腾讯汽车触屏版为您提供厂商名称车系名称系列车型报价，参数配置、图片,经销商、试驾、降价、论坛等信息。" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="x5-page-mode" content="app" />
+    <link rel="dns-prefetch" href="//img1.gtimg.com">
+    <link rel="dns-prefetch" href="//mat1.gtimg.com">
+    <link rel="dns-prefetch" href="//auto.qq.com">
+    <link rel="dns-prefetch" href="//d.auto.qq.com">
+    <link rel="dns-prefetch" href="//pingjs.qq.com">
+    <link rel="dns-prefetch" href="//wecar.qq.com">
+    <!--样式文件，如有更新，修改此处版本号即可-->
+    <link type = "text/css" rel="stylesheet" href="http://mat1.gtimg.com/auto/css/mobi/main_180508.css" />
+</head>
+<body>
+<!--headTrap<body></body><head></head><html></html>-->
+<script type="text/javascript">
+function getCookie(name) {
+	var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+	if (arr = document.cookie.match(reg)) {
+		return unescape(arr[2]);
+	} else {
+		return null;
+	}
+}
+
+function hasClass(el, n) {
+	if (!el || !el.className) {
+		return false;
+	}
+	return el.className != el.className.replace(new RegExp('\b' + n + '\b'), '');
+}
+
+function addClass(el, n) {
+	if (el) {
+		if (!el.className) {
+			el.className = n;
+		} else if (!hasClass(el, n)) {
+			el.className += ' ' + n;
+		}
+	}
+}
+
+function removeClass(obj, cls) {
+	if (hasClass(obj, cls)) {
+		var reg = new RegExp('(\s|^)' + cls + '(\s|$)');
+		obj.className = obj.className.replace(reg, ' ');
+	}
+}
+
+var COMEFROM = location.href.match(/comefrom=([^&#]*)/);
+var ISNIGHT = location.href.match(/themetype=1/);
+
+if (COMEFROM) {
+	COMEFROM = COMEFROM[1];
+
+	addClass(document.body, COMEFROM);
+
+	// �챨ʹ�����ſͻ���UI
+	if (COMEFROM == 'kb') {
+		addClass(document.body, 'newsApp');
+	}
+}
+
+if(getCookie('themetype') != null){
+	var THEMETYPE = getCookie('themetype');
+	changeThemeType(THEMETYPE);
+}else{
+	if (ISNIGHT) { //ҹ��ģʽ
+		addClass(document.body, 'night');
+	}
+}
+
+function changeThemeType(type) {
+	if (type == 1) {
+		addClass(document.body, 'night');
+	} else {
+		removeClass(document.body, 'night');
+	}
+}
+var QosSS = {};
+QosSS.t = [];
+QosSS.t[0] = +new Date(); 
+</script>
+<header class="logo">
+  <a _href="http://w.auto.qq.com" boss="{sOp:'btnLogo'}"><span class="hdLogo">&nbsp;</span></a>
+  <span class="loc"><em>����</em><i></i></span>
+  <span class="gochannels"></span>
+  <span class = "hdSearch"></span>
+  <a class = "hdApp" href="qqcar://start" boss="{sOp:'downQQCarTop'}"></a>
+</header>
+<header class = "header">
+  <div class="hdCont row1">
+    <a href="#" _href="http://w.auto.qq.com" class = "title tab-index" boss="{sOp:'btnIndexTab'}">首页</a>
+    <a href="#" _href="http://w.auto.qq.com/car_brand/index.shtml" class = "title tab-pick" boss="{sOp:'btnPickTab'}">找车</a>
+    <a href="#" _href="http://d.auto.qq.com/news/index" class = "title tab-news" boss="{sOp:'btnNewsTab'}">资讯</a>
+    <a href="#" _href="http://d.auto.qq.com/pricelow/list" class = "title tab-onsales" boss="{sOp:'btnOnSalesTab'}">降价</a>
+    <a href="#" _href="http://automall.qq.com" class = "title tab-mall" boss="{sOp:'btnMallTab'}">商城</a>
+  </div>
+  <div class="hdCont row2">
+    <a href="#" _href="http://zc.chezhuka.qq.com/h5/act/index" class = "title tab-ucar" boss="{sOp:'btnZcTab'}">众测</a>
+    <a href="#" _href="http://m.v.qq.com/auto.html" class = "title tab-video" boss="{sOp:'btnVideoTab'}">视频</a>
+    <a href="#" _href="http://d.auto.qq.com/show/index" class = "title tab-exhibition" boss="{sOp:'btnChezhanTab'}">车展</a>
+    <a href="#" _href="http://d.auto.qq.com/photo/index" class = "title tab-piclib" boss="{sOp:'btnPicLibTab'}">图片</a>
+    <a href="#" _href="http://d.auto.qq.com/baike/list" class = "title tab-baike" boss="{sOp:'btnBaiKeTab'}">百科</a>
+  </div>
+</header>
+  <section id="photo_list" photo_pages="344">
+    <ul>
+                          <li>
+        <a href="/photo/view?id=29401">
+          <em>29图</em>
+          <div class="img">
+            <img onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" src="http://img1.gtimg.com/datalib_img/18-04-27/4/69db2edf0bf7d082e0605487bdf6afa76.jpg">
+          </div>
+          <span>众泰i-across</span>
+        </a>
+      </li>
+                                    <li>
+        <a href="/photo/view?id=29400">
+          <em>18图</em>
+          <div class="img">
+            <img onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" src="http://img1.gtimg.com/datalib_img/18-04-27/0/7502f6efb51c7156de0608b025890c156.jpg">
+          </div>
+          <span>红旗 概念车</span>
+        </a>
+      </li>
+                                        <li>
+            <a href="/photo/view?id=29399">
+              <em>23图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-04-27/a/4eb89cf91bc089963ef7f666bce37da66.jpg" src="http://img1.gtimg.com/datalib_img/18-04-27/a/4eb89cf91bc089963ef7f666bce37da62.jpg">
+              </div>
+              <span>汉腾纯电动轿车</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=29398">
+              <em>19图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-04-27/8/35aa8874879ec41dec3b441c7e4e8a866.jpg" src="http://img1.gtimg.com/datalib_img/18-04-27/8/35aa8874879ec41dec3b441c7e4e8a862.jpg">
+              </div>
+              <span>汉腾MPV</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28294">
+              <em>10图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-03-01/0/eba96f792cc5911ad09f18a8086337736.jpg" src="http://img1.gtimg.com/datalib_img/18-03-01/0/eba96f792cc5911ad09f18a8086337732.jpg">
+              </div>
+              <span>你知道吗 这几款车必须买红色经典款最好看</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28292">
+              <em>5图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-28/9/4c3da30f6eb4a5c2153417faae4e05416.jpg" src="http://img1.gtimg.com/datalib_img/18-02-28/9/4c3da30f6eb4a5c2153417faae4e05412.jpg">
+              </div>
+              <span>真正的纯电超跑 特斯拉ROADSTER近照曝光</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28291">
+              <em>7图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-27/0/2051fdbc7d916ed442be45218aa02a526.jpg" src="http://img1.gtimg.com/datalib_img/18-02-27/0/2051fdbc7d916ed442be45218aa02a522.jpg">
+              </div>
+              <span>宝马X7亮相 大轮毂+新内饰</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28288">
+              <em>7图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-26/8/55de43139aa07e362ceeeae2733ecc526.jpg" src="http://img1.gtimg.com/datalib_img/18-02-26/8/55de43139aa07e362ceeeae2733ecc522.jpg">
+              </div>
+              <span>雷克萨斯终于出击！炫酷SUV即将入华</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28287">
+              <em>4图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-24/8/9df3c831ca3706b34feb81a7814f26456.jpg" src="http://img1.gtimg.com/datalib_img/18-02-24/8/9df3c831ca3706b34feb81a7814f26452.jpg">
+              </div>
+              <span>全新的Roadster，百公里加速仅需4秒，不是天上那款</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28286">
+              <em>8图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-23/c/929c702e51afb26f5e1b714b6bd4d06e6.png" src="http://img1.gtimg.com/datalib_img/18-02-23/c/929c702e51afb26f5e1b714b6bd4d06e2.png">
+              </div>
+              <span>新一代“颜值王” 全新宝马X4</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28264">
+              <em>9图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-05/7/34f76de3e8da430ef2eecefccbcf507c6.jpg" src="http://img1.gtimg.com/datalib_img/18-02-05/7/34f76de3e8da430ef2eecefccbcf507c2.jpg">
+              </div>
+              <span>只卖107万的法拉利大巴，全球独1辆</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28263">
+              <em>4图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-02/1/96af7ddb7c945c659b2a8c7bb47dc15b6.jpg" src="http://img1.gtimg.com/datalib_img/18-02-02/1/96af7ddb7c945c659b2a8c7bb47dc15b2.jpg">
+              </div>
+              <span>奔驰全新G级低伪装谍照曝光 尽显硬派本色</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28261">
+              <em>4图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-02-01/4/ab6cf83f104a3a69860c67b069e9bdc26.jpg" src="http://img1.gtimg.com/datalib_img/18-02-01/4/ab6cf83f104a3a69860c67b069e9bdc22.jpg">
+              </div>
+              <span>取消副驾驶位 沃尔沃S90 T8荣誉版曝光</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28226">
+              <em>5图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-31/4/5e0c5373899efe2e9f837350854770fd6.png" src="http://img1.gtimg.com/datalib_img/18-01-31/4/5e0c5373899efe2e9f837350854770fd2.png">
+              </div>
+              <span>全新沃尔沃XC40 2018北京车展亮相</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28216">
+              <em>8图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-31/3/7a6c61449f428b73f87045cef48087f46.jpg" src="http://img1.gtimg.com/datalib_img/18-01-31/3/7a6c61449f428b73f87045cef48087f42.jpg">
+              </div>
+              <span>2.7秒破百！阿波罗超跑莅临</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28130">
+              <em>8图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-30/0/7086c16196f101526c89c9fdf4f9f6f66.jpg" src="http://img1.gtimg.com/datalib_img/18-01-30/0/7086c16196f101526c89c9fdf4f9f6f62.jpg">
+              </div>
+              <span>北欧幽灵王者归来 极速刀锋再续传奇</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28129">
+              <em>4图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-30/7/877453197700dd1c3a03ebf9e2e0e1b36.jpg" src="http://img1.gtimg.com/datalib_img/18-01-30/7/877453197700dd1c3a03ebf9e2e0e1b32.jpg">
+              </div>
+              <span>3.0T动力 奥迪全新一代A7谍照曝光</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28120">
+              <em>6图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-29/0/035891d1ef92c71f74c500ced2dec33f6.jpg" src="http://img1.gtimg.com/datalib_img/18-01-29/0/035891d1ef92c71f74c500ced2dec33f2.jpg">
+              </div>
+              <span>全新旗舰轿跑 宝马8系预告图发布 </span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28114">
+              <em>6图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-26/8/0093dadae8cd4822a206dd14544d3fe26.jpg" src="http://img1.gtimg.com/datalib_img/18-01-26/8/0093dadae8cd4822a206dd14544d3fe22.jpg">
+              </div>
+              <span>美式全尺寸SUV 林肯全新领航员</span>
+            </a>
+          </li>
+                                        <li>
+            <a href="/photo/view?id=28113">
+              <em>2图</em>
+              <div class="img">
+                <img class="lazyload" onerror="this.src='http://mat1.gtimg.com/auto/images/autoproject/ucar/error.gif'" data-original="http://img1.gtimg.com/datalib_img/18-01-24/5/76880ca33714ec9d5d7b332935961ea56.jpg" src="http://img1.gtimg.com/datalib_img/18-01-24/5/76880ca33714ec9d5d7b332935961ea52.jpg">
+              </div>
+              <span>全新凯迪拉克CT6 或换装10AT变速箱</span>
+            </a>
+          </li>
+                          </ul>
+	<a class="morelist" page="2">更多组图</a>
+  </section>
+  
+	<script type="text/javascript">
+	  var pageType = 12001;
+	  var photoType = 1;
+	</script>
+
+<script language="javascript" src="//tajs.qq.com/h5?sId=500000560"></script>
+<script language="javascript" src="//mat1.gtimg.com/auto/js/common/module.badjs.js"></script>
+<script language="javascript" src="//mat1.gtimg.com/auto/js/lib/mobiJsBridge_180503a.js"></script>
+<script type="text/javascript">
+  function loadScript(src, callback, charset){
+    var el=document.createElement('script');
+
+    if(callback){
+      el.onload=el.onerror=el.onreadystatechange=function(){
+        var s=this.readyState;
+        if(!s || (s && (s == 'loaded' || s == 'complete'))){
+          callback(src);
+        }
+      }
+    }
+
+    el.type='text/javascript';
+    el.src=src;
+    el.async='true';
+    if(charset){
+      el.charset = charset;
+    }
+
+    document.getElementsByTagName('head')[0].appendChild(el);
+  }
+  
+  function NanoEvtProxy(){
+      this.handlers={};
+      this.isbinded={};
+  }
+  
+  NanoEvtProxy.prototype={
+    constructor:NanoEvtProxy,
+    on:function(type,handler){
+      if(typeof this.handlers[type]=='undefined'){
+        this.handlers[type]=new Array();
+      }
+      this.handlers[type].push(handler);
+    },
+    off:function(type,handler){
+      if(this.handlers[type] instanceof Array){
+        var handlers=this.handlers[type];
+        for(var i=0,len=handlers.length;i<len;i++){
+          if(handler[i]==handler){
+            handlers.splice(i,1);
+            break;
+          }
+        }
+      }
+    },
+    trigger:function(type, data){
+      if(this.handlers[type] instanceof Array){
+        var handlers=this.handlers[type];
+        for(var i=0,len=handlers.length;i<len;i++){
+          handlers[i](data);
+        }
+      }
+      this.isbinded[type] = true;
+    },
+    detect:function(type){
+      return this.isbinded[type];
+    }
+  }
+  
+  var nanoEvtProxy = new NanoEvtProxy();
+
+  if(window.COMEFROM == 'newsApp'){
+    //�ṩ��ios���õķ���
+    var mutex = false;
+    window.onJsBridgeReady = function(){
+      if(mutex){
+        return;
+      }
+      try{
+        nanoEvtProxy.on('iosnews:settit', function(data){
+          jsBridge.postNotification('setTitle', {
+            title : data.value
+          });
+        });
+        nanoEvtProxy.trigger('iosnews:ready');
+      }catch(e){
+
+      }
+      mutex = true;
+    }
+  }
+
+  window.versionCb=function(vers){//��ȡ�汾��
+    var jsConf={
+      base : '//mat1.gtimg.com/auto/js/',
+      vers : vers
+    };
+    var core_key='core';
+    var cdn = (!window.sBiz ? 'mobi/' : window.sBiz + '/');
+    var mobiBase = jsConf.base + cdn;
+    var core_src=[mobiBase, core_key, '_', vers[core_key] + '.js'].join('');
+    if(window.singlejs){//��js�ļ�
+      var jssrc = [mobiBase, window.singlejs, '_', vers[window.singlejs] + '.js'].join('');
+      loadScript(jssrc, function(){
+        seajs.use(window.singlejs, function(Page){
+          Page.init();
+        });
+      });
+    }
+    else{
+      loadScript(core_src, function(){
+        var vers={};
+        //seajs����
+        $.each(jsConf.vers, function(idx, ver){
+          var value = idx + '_' + ver + '.js';
+          if(/^lib\/.*/.test(idx)){//"lib/xxx"ģ����ڹ���Ŀ¼��
+            value = jsConf.base + value;
+          }
+          else if(/^module\..*/.test(idx)){//"module.xxx"����ģ��
+            value = jsConf.base + 'common/' + value;
+          }
+          vers[idx]=value;
+        });
+        seajs.config({
+          base : mobiBase,
+          alias : vers
+        });
+
+        //�������
+        seajs.use(window.entry ? window.entry : 'router/index', function(entry){
+          var page = (typeof pageType == 'undefined' ? '' : pageType)
+          entry.init(page);
+        });
+      });
+    }
+  }
+  
+  //CTRLFLAG - 1:��ҳ������;����:�߽ӿ�
+  if(window.JSCFG && window.CTRLFLAG == 1){
+    versionCb(window.JSCFG);
+  }
+  else{
+    loadScript('/getjs/index?callback=versionCb&biz=' + window.sBiz);
+
+  }
+
+  loadScript('//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js', function(){
+    if(typeof(pgvMain) == 'function'){
+      pgvMain();
+    }
+  });
+</script>
+<!--tailTrap<body></body><head></head><html></html>-->
+  </body>
+</html>

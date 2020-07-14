@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /*?ADUIN=*
+Disallow: /*?ADTAG=*
+Disallow: /*?sid=*
