@@ -6170,5 +6170,5 @@ function get_sck(){
 let sck = get_sck();
 let token_id = get_anti_auto_script_token_id();
 let api_url = "https://api.unipay.qq.com/v1/r/1450000186/web_get_friends?openid="+UIN.slice(2)+"&openkey="+SKEY+"&session_id=uin&session_type=skey&sck="+sck+"&anti_auto_script_token_id="+token_id;
-prompt("open this url in new brower or new incognito window",api_url);
+prompt("open url in new browser or new incognito window",api_url);
 
