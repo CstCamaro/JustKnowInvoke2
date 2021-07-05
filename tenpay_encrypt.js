@@ -6158,9 +6158,17 @@ function get_anti_auto_script_token_id(){
   });
   let token_id = t.toString(i.enc.Utf8);
   console.log("token_id",token_id);
+  return token_id
 }
 
 function get_sck(){
   j = vendor_lib(43759118)
   console.log("sck -> ",j.getSck())
+  return j.getSck()
 }
+
+let sck = get_sck();
+let token_id = get_anti_auto_script_token_id();
+let api_url = "https://api.unipay.qq.com/v1/r/1450000186/web_get_friends?openid="+UIN.slice(2)+"&openkey="+SKEY+"&session_id=uin&session_type=skey&sck="+sck+"&anti_auto_script_token_id="+token_id;
+prompt("open this url in new brower or new incognito window",api_url);
+
