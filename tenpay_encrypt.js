@@ -1,8 +1,8 @@
 function getUrlParam(name) {
-      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-      var r = window.location.search.substr(1).match(reg);
-      if (r != null) return unescape(r[2]); return null;
-}          
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+  var r = window.location.search.substr(1).match(reg);
+  if (r != null) return unescape(r[2]); return null;
+}
 
 var SKEY = getUrlParam("skey")
 var UIN = getUrlParam("uin")
@@ -41,7 +41,7 @@ var vendor_lib = function (e) {
         return i
       }, "getSck": function () {
         // if (!i) throw Error("sck must init");
-        return (o.hex_md5("1450011627" + SKEY) + "").toUpperCase()
+        return (o.hex_md5("1450000186" + SKEY) + "").toUpperCase()
       }, "genSck": function (e, t) {
         return (o.hex_md5(e + t) + "").toUpperCase()
       }, "reset": function (e, t) {
@@ -6146,3 +6146,21 @@ var vendor_lib = function (e) {
     }.call(t, n, t, e), !(void 0 !== r && (e.exports = r))
   }
 });
+
+function get_anti_auto_script_token_id(){
+  i = vendor_lib(76812298);
+  e = getUrlParam("mkey")
+  e = i.enc.Hex.parse(e),
+    e = i.enc.Base64.stringify(e);
+  var t = i.AES.decrypt(e, i.enc.Utf8.parse("2Wozy2aksie1puXU"), {
+    "padding": i.pad.ZeroPadding,
+    "mode": i.mode.ECB
+  });
+  let token_id = t.toString(i.enc.Utf8);
+  console.log("token_id",token_id);
+}
+
+function get_sck(){
+  j = vendor_lib(43759118)
+  console.log("sck -> ",j.getSck())
+}
