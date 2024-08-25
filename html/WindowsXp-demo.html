@@ -86,6 +86,12 @@
                                             </svg>
                                             <span class="text-white text-sm">扫雷</span>
                                         </li>
+                                        <li id="openGomokuButton" class="px-3 py-2 hover:bg-gray-700 flex items-center cursor-pointer">
+                                            <svg class="w-5 h-5 mr-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                                            </svg>
+                                            <span class="text-white text-sm">五子棋</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -160,6 +166,511 @@
             </div>
         </div>
     </div>
+    <div id="gomoku" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg overflow-hidden" style="display: none; width: 400px;">
+        <div id="gomoku-header" class="bg-green-600 px-4 py-2 cursor-move flex justify-between items-center">
+            <span class="text-white">五子棋</span>
+            <button id="close-gomoku" class="text-white hover:bg-red-500 px-2">&times;</button>
+        </div>
+        <div id="gomoku-menu" class="bg-gray-100 px-4 py-2">
+            <ul class="flex space-x-4">
+                <li class="relative">
+                    <span id="gomoku-game-menu-trigger" class="cursor-pointer hover:text-green-600">游戏</span>
+                    <ul id="gomoku-game-submenu" class="absolute hidden bg-white border border-gray-200 mt-1 rounded shadow-md w-32 z-10">
+                        <li id="gomoku-new-game-menu" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">新游戏</li>
+                        <li id="gomoku-exit-game-menu" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">退出</li>
+                    </ul>
+                </li>
+                <li id="gomoku-about-menu" class="cursor-pointer hover:text-green-600">关于</li>
+            </ul>
+        </div>
+        <div id="gomoku-board" class="w-80 h-80 mx-auto my-4 bg-yellow-100 relative">
+            <!-- 棋盘网格线将通过 JavaScript 动态生成 -->
+        </div>
+        <div class="flex justify-between px-4 py-2 bg-gray-200">
+            <div id="gomoku-current-player" class="font-bold">当前玩家: 黑子</div>
+            <button id="gomoku-restart" class="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">重新开始</button>
+        </div>
+    </div>
+
+    <div id="gomoku-about-dialog" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg w-80">
+            <div class="bg-green-600 px-4 py-2 flex justify-between items-center">
+                <span class="text-white">关于五子棋</span>
+                <button id="close-gomoku-about" class="text-white hover:bg-red-500 px-2">&times;</button>
+            </div>
+            <div class="p-4">
+                <p>五子棋是一种两人对弈的纯策略型棋类游戏。游戏双方分别使用黑白两色的棋子，轮流将棋子放在棋盘空白处。先把五个或五个以上同色棋子连成一条直线（横、竖、斜线均可）的一方获胜。</p>
+            </div>
+            <div class="bg-gray-100 px-4 py-2 flex justify-end">
+                <button id="ok-gomoku-about" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">确定</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const gomokuContainer = document.getElementById('gomoku');
+        const gomokuTitleBar = document.getElementById('gomoku-header');
+        const gomokuCloseBtn = document.getElementById('close-gomoku');
+        const gomokuBoard = document.getElementById('gomoku-board');
+        const gomokuCurrentPlayerDisplay = document.getElementById('gomoku-current-player');
+        const gomokuRestartButton = document.getElementById('gomoku-restart');
+        const gomokuGameMenuTrigger = document.getElementById('gomoku-game-menu-trigger');
+        const gomokuGameSubmenu = document.getElementById('gomoku-game-submenu');
+        const gomokuNewGameMenuItem = document.getElementById('gomoku-new-game-menu');
+        const gomokuExitGameMenuItem = document.getElementById('gomoku-exit-game-menu');
+        const gomokuAboutMenuItem = document.getElementById('gomoku-about-menu');
+        const gomokuAboutDialog = document.getElementById('gomoku-about-dialog');
+        const gomokuCloseAboutBtn = document.getElementById('close-gomoku-about');
+        const gomokuOkAboutBtn = document.getElementById('ok-gomoku-about');
+
+        let gomokuIsActive = false;
+        let gomokuCurrentPlayer = 'black';
+        let gomokuBoard2D = [];
+        const gomokuBoardSize = 15;
+        let isRobotMode = false;
+        let isPlayerFirst = true;
+        let lastPlayerMove = null;
+
+        function initializeGomokuBoard() {
+            gomokuBoard.innerHTML = '';
+            gomokuBoard2D = Array(gomokuBoardSize).fill().map(() => Array(gomokuBoardSize).fill(null));
+            lastPlayerMove = null;
+            
+            // Create grid lines
+            for (let i = 0; i < gomokuBoardSize; i++) {
+                const horizontalLine = document.createElement('div');
+                horizontalLine.className = 'absolute w-full border-t border-gray-400';
+                horizontalLine.style.top = `${(i / (gomokuBoardSize - 1)) * 100}%`;
+                gomokuBoard.appendChild(horizontalLine);
+
+                const verticalLine = document.createElement('div');
+                verticalLine.className = 'absolute h-full border-l border-gray-400';
+                verticalLine.style.left = `${(i / (gomokuBoardSize - 1)) * 100}%`;
+                gomokuBoard.appendChild(verticalLine);
+            }
+
+            // Create clickable areas
+            for (let row = 0; row < gomokuBoardSize; row++) {
+                for (let col = 0; col < gomokuBoardSize; col++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'absolute w-6 h-6 -mt-3 -ml-3 cursor-pointer';
+                    cell.style.left = `${(col / (gomokuBoardSize - 1)) * 100}%`;
+                    cell.style.top = `${(row / (gomokuBoardSize - 1)) * 100}%`;
+                    cell.addEventListener('click', () => placeStone(row, col));
+                    gomokuBoard.appendChild(cell);
+                }
+            }
+
+            updateGomokuCurrentPlayerDisplay();
+
+            if (isRobotMode && !isPlayerFirst) {
+                robotMove();
+            }
+        }
+
+        function placeStone(row, col) {
+            if (gomokuBoard2D[row][col] === null) {
+                const stone = document.createElement('div');
+                stone.className = `absolute w-5 h-5 rounded-full ${gomokuCurrentPlayer === 'black' ? 'bg-black' : 'bg-white'}`;
+                stone.style.left = `${(col / (gomokuBoardSize - 1)) * 100}%`;
+                stone.style.top = `${(row / (gomokuBoardSize - 1)) * 100}%`;
+                stone.style.transform = 'translate(-50%, -50%)';
+                gomokuBoard.appendChild(stone);
+
+                gomokuBoard2D[row][col] = gomokuCurrentPlayer;
+
+                if (checkWin(row, col)) {
+                    setTimeout(() => {
+                        showCustomAlert(`${gomokuCurrentPlayer === 'black' ? '黑子' : '白子'}赢了！`);
+                        initializeGomokuBoard();
+                    }, 100);
+                } else {
+                    gomokuCurrentPlayer = gomokuCurrentPlayer === 'black' ? 'white' : 'black';
+                    updateGomokuCurrentPlayerDisplay();
+
+                    if (isRobotMode && gomokuCurrentPlayer === 'white') {
+                        lastPlayerMove = { row, col };
+                        setTimeout(robotMove, 500);
+                    }
+                }
+            }
+        }
+
+        function robotMove() {
+            let bestMove = findBestMove();
+            placeStone(bestMove.row, bestMove.col);
+        }
+
+        function findBestMove() {
+            let bestScore = -Infinity;
+            let bestMove = null;
+            const directions = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]];
+
+            // 只考虑最后一个玩家落子周围的位置
+            for (const [dx, dy] of directions) {
+                const row = lastPlayerMove.row + dx;
+                const col = lastPlayerMove.col + dy;
+                if (row >= 0 && row < gomokuBoardSize && col >= 0 && col < gomokuBoardSize && gomokuBoard2D[row][col] === null) {
+                    gomokuBoard2D[row][col] = 'white';
+                    let score = minimax(gomokuBoard2D, 1, false);  // 减少搜索深度到1
+                    gomokuBoard2D[row][col] = null;
+
+                    if (score > bestScore) {
+                        bestScore = score;
+                        bestMove = { row, col };
+                    }
+                }
+            }
+
+            // 有20%的概率随机下棋，增加更多随机性
+            if (Math.random() < 0.2 || bestMove === null) {
+                let emptySpots = [];
+                for (const [dx, dy] of directions) {
+                    const row = lastPlayerMove.row + dx;
+                    const col = lastPlayerMove.col + dy;
+                    if (row >= 0 && row < gomokuBoardSize && col >= 0 && col < gomokuBoardSize && gomokuBoard2D[row][col] === null) {
+                        emptySpots.push({ row, col });
+                    }
+                }
+                if (emptySpots.length > 0) {
+                    return emptySpots[Math.floor(Math.random() * emptySpots.length)];
+                }
+            }
+
+            return bestMove;
+        }
+
+        function minimax(board, depth, isMaximizing) {
+            if (depth === 0 || checkWinForMinimax(board)) {
+                return evaluateBoard(board);
+            }
+
+            if (isMaximizing) {
+                let bestScore = -Infinity;
+                for (let row = 0; row < gomokuBoardSize; row++) {
+                    for (let col = 0; col < gomokuBoardSize; col++) {
+                        if (board[row][col] === null) {
+                            board[row][col] = 'white';
+                            let score = minimax(board, depth - 1, false);
+                            board[row][col] = null;
+                            bestScore = Math.max(score, bestScore);
+                        }
+                    }
+                }
+                return bestScore;
+            } else {
+                let bestScore = Infinity;
+                for (let row = 0; row < gomokuBoardSize; row++) {
+                    for (let col = 0; col < gomokuBoardSize; col++) {
+                        if (board[row][col] === null) {
+                            board[row][col] = 'black';
+                            let score = minimax(board, depth - 1, true);
+                            board[row][col] = null;
+                            bestScore = Math.min(score, bestScore);
+                        }
+                    }
+                }
+                return bestScore;
+            }
+        }
+
+        function evaluateBoard(board) {
+            let score = 0;
+            const directions = [[1, 0], [0, 1], [1, 1], [1, -1]];
+
+            for (let row = 0; row < gomokuBoardSize; row++) {
+                for (let col = 0; col < gomokuBoardSize; col++) {
+                    if (board[row][col] !== null) {
+                        for (const [dx, dy] of directions) {
+                            let count = 1;
+                            let r = row + dx;
+                            let c = col + dy;
+                            while (r >= 0 && r < gomokuBoardSize && c >= 0 && c < gomokuBoardSize && board[r][c] === board[row][col]) {
+                                count++;
+                                r += dx;
+                                c += dy;
+                            }
+                            if (count >= 5) {
+                                return board[row][col] === 'white' ? 1000 : -1000;
+                            }
+                            score += (board[row][col] === 'white' ? 1 : -1) * Math.pow(4, count);  // 进一步减少评分权重从8到4
+                        }
+                    }
+                }
+            }
+            return score;
+        }
+
+        function checkWinForMinimax(board) {
+            const directions = [[1, 0], [0, 1], [1, 1], [1, -1]];
+
+            for (let row = 0; row < gomokuBoardSize; row++) {
+                for (let col = 0; col < gomokuBoardSize; col++) {
+                    if (board[row][col] !== null) {
+                        for (const [dx, dy] of directions) {
+                            let count = 1;
+                            let r = row + dx;
+                            let c = col + dy;
+                            while (r >= 0 && r < gomokuBoardSize && c >= 0 && c < gomokuBoardSize && board[r][c] === board[row][col]) {
+                                count++;
+                                r += dx;
+                                c += dy;
+                            }
+                            if (count >= 5) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        function checkWin(row, col) {
+            const directions = [
+                [1, 0], [0, 1], [1, 1], [1, -1]
+            ];
+
+            for (const [dx, dy] of directions) {
+                let count = 1;
+                count += countDirection(row, col, dx, dy);
+                count += countDirection(row, col, -dx, -dy);
+
+                if (count >= 5) return true;
+            }
+
+            return false;
+        }
+
+        function countDirection(row, col, dx, dy) {
+            let count = 0;
+            let r = row + dx;
+            let c = col + dy;
+
+            while (
+                r >= 0 && r < gomokuBoardSize &&
+                c >= 0 && c < gomokuBoardSize &&
+                gomokuBoard2D[r][c] === gomokuCurrentPlayer
+            ) {
+                count++;
+                r += dx;
+                c += dy;
+            }
+
+            return count;
+        }
+
+        function updateGomokuCurrentPlayerDisplay() {
+            gomokuCurrentPlayerDisplay.textContent = `当前玩家: ${gomokuCurrentPlayer === 'black' ? '黑子' : '白子'}`;
+        }
+
+        gomokuRestartButton.addEventListener('click', () => {
+            showCustomConfirm('是否启用机器人模式？', (result) => {
+                isRobotMode = result;
+                if (isRobotMode) {
+                    showCustomConfirm('是否玩家先手？', (playerFirst) => {
+                        isPlayerFirst = playerFirst;
+                        initializeGomokuBoard();
+                    });
+                } else {
+                    initializeGomokuBoard();
+                }
+            });
+        });
+
+        gomokuCloseBtn.addEventListener('click', () => {
+            gomokuContainer.style.display = 'none';
+            removeGomokuIcon();
+        });
+
+        gomokuGameMenuTrigger.addEventListener('click', () => {
+            gomokuGameSubmenu.classList.toggle('hidden');
+        });
+
+        gomokuNewGameMenuItem.addEventListener('click', () => {
+            showCustomConfirm('是否启用机器人模式？', (result) => {
+                isRobotMode = result;
+                if (isRobotMode) {
+                    showCustomConfirm('是否玩家先手？', (playerFirst) => {
+                        isPlayerFirst = playerFirst;
+                        initializeGomokuBoard();
+                    });
+                } else {
+                    initializeGomokuBoard();
+                }
+            });
+            gomokuGameSubmenu.classList.add('hidden');
+        });
+
+        gomokuExitGameMenuItem.addEventListener('click', () => {
+            gomokuContainer.style.display = 'none';
+            removeGomokuIcon();
+            gomokuGameSubmenu.classList.add('hidden');
+        });
+
+        gomokuAboutMenuItem.addEventListener('click', () => {
+            gomokuAboutDialog.classList.remove('hidden');
+        });
+
+        gomokuCloseAboutBtn.addEventListener('click', () => {
+            gomokuAboutDialog.classList.add('hidden');
+        });
+
+        gomokuOkAboutBtn.addEventListener('click', () => {
+            gomokuAboutDialog.classList.add('hidden');
+        });
+
+        // Make the Gomoku window draggable
+        let isGomokuDragging = false;
+        let gomokuStartX, gomokuStartY, gomokuOffsetX, gomokuOffsetY;
+
+        gomokuTitleBar.addEventListener('mousedown', gomokuStartDrag);
+        document.addEventListener('mousemove', gomokuDrag);
+        document.addEventListener('mouseup', gomokuEndDrag);
+
+        function gomokuStartDrag(e) {
+            gomokuStartX = e.clientX - gomokuContainer.offsetLeft;
+            gomokuStartY = e.clientY - gomokuContainer.offsetTop;
+            if (e.target === gomokuTitleBar) {
+                isGomokuDragging = true;
+            }
+        }
+
+        function gomokuDrag(e) {
+            if (isGomokuDragging) {
+                e.preventDefault();
+                gomokuOffsetX = e.clientX - gomokuStartX;
+                gomokuOffsetY = e.clientY - gomokuStartY;
+                gomokuContainer.style.left = gomokuOffsetX + 'px';
+                gomokuContainer.style.top = gomokuOffsetY + 'px';
+            }
+        }
+
+        function gomokuEndDrag(e) {
+            isGomokuDragging = false;
+        }
+
+        // Add Gomoku to the Start menu
+        const launchGomokuBtn = document.getElementById('openGomokuButton');
+        launchGomokuBtn.addEventListener('click', () => {
+            gomokuContainer.style.display = 'block';
+            showCustomConfirm('是否启用机器人模式？', (result) => {
+                isRobotMode = result;
+                if (isRobotMode) {
+                    showCustomConfirm('是否玩家先手？', (playerFirst) => {
+                        isPlayerFirst = playerFirst;
+                        initializeGomokuBoard();
+                    });
+                } else {
+                    initializeGomokuBoard();
+                }
+            });
+            addGomokuIcon();
+        });
+
+        // Function to add Gomoku icon to the taskbar with animation
+        function addGomokuIcon() {
+            const taskbar = document.getElementById('taskbar');
+            if (!document.getElementById('gomoku-icon')) {
+                const gomokuIcon = document.createElement('div');
+                gomokuIcon.id = 'gomoku-icon';
+                gomokuIcon.innerHTML = `
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8M8 12h8"/>
+                        </svg>
+                        <span class="text-white ml-2">五子棋</span>
+                    </div>
+                `;
+                gomokuIcon.style.opacity = '0';
+                gomokuIcon.style.transform = 'scale(0.8)';
+                gomokuIcon.style.transition = 'opacity 0.5s, transform 0.5s';
+                taskbar.appendChild(gomokuIcon);
+                
+                // Trigger reflow to ensure the transition takes effect
+                gomokuIcon.offsetHeight;
+                
+                // Apply the final styles to create the animation effect
+                gomokuIcon.style.opacity = '1';
+                gomokuIcon.style.transform = 'scale(1)';
+            }
+        }
+
+        // Function to remove Gomoku icon from the taskbar with animation
+        function removeGomokuIcon() {
+            const gomokuIcon = document.getElementById('gomoku-icon');
+            if (gomokuIcon) {
+                gomokuIcon.style.transition = 'opacity 0.5s, transform 0.5s';
+                gomokuIcon.style.opacity = '0';
+                gomokuIcon.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    gomokuIcon.remove();
+                }, 500);
+            }
+        }
+
+        // Initialize Gomoku board when the script loads
+        initializeGomokuBoard();
+
+        // Custom alert function
+        function showCustomAlert(message) {
+            const alertDialog = document.createElement('div');
+            alertDialog.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            alertDialog.innerHTML = `
+                <div class="bg-white rounded-lg shadow-lg w-80">
+                    <div class="bg-green-600 px-4 py-2 flex justify-between items-center">
+                        <span class="text-white">提示</span>
+                    </div>
+                    <div class="p-4">
+                        <p>${message}</p>
+                    </div>
+                    <div class="bg-gray-100 px-4 py-2 flex justify-end">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">确定</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(alertDialog);
+
+            const okButton = alertDialog.querySelector('button');
+            okButton.addEventListener('click', () => {
+                document.body.removeChild(alertDialog);
+            });
+        }
+
+        // Custom confirm function
+        function showCustomConfirm(message, callback) {
+            const confirmDialog = document.createElement('div');
+            confirmDialog.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            confirmDialog.innerHTML = `
+                <div class="bg-white rounded-lg shadow-lg w-80">
+                    <div class="bg-green-600 px-4 py-2 flex justify-between items-center">
+                        <span class="text-white">确认</span>
+                    </div>
+                    <div class="p-4">
+                        <p>${message}</p>
+                    </div>
+                    <div class="bg-gray-100 px-4 py-2 flex justify-end space-x-2">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" id="confirm-yes">是</button>
+                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" id="confirm-no">否</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(confirmDialog);
+
+            const yesButton = confirmDialog.querySelector('#confirm-yes');
+            const noButton = confirmDialog.querySelector('#confirm-no');
+
+            yesButton.addEventListener('click', () => {
+                document.body.removeChild(confirmDialog);
+                callback(true);
+            });
+
+            noButton.addEventListener('click', () => {
+                document.body.removeChild(confirmDialog);
+                callback(false);
+            });
+        }
+    </script>
 
     <script>
         const minesweeperContainer = document.getElementById('minesweeper');
@@ -665,5 +1176,7 @@
             }
         }
     </script>
+
+    
 </body>
 </html>
